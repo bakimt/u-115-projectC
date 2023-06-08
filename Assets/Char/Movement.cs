@@ -16,6 +16,10 @@ public class Movement : MonoBehaviour {
         {
             _rb.AddForce(new Vector3(0,5,0), ForceMode.Impulse);
         }
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+              Physics.gravity = new Vector3(0, -3.0F, 0);
+        }
     }
 
     private void FixedUpdate() {
