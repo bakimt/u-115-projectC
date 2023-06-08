@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class SoaringController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float jumpForce = 5f; // The force applied when the character jumps
+    public KeyCode jumpKey = KeyCode.Space; // The key to trigger the jump
+
+    private Rigidbody rb; // Reference to the character's Rigidbody component
+    private bool isJumping = false; // Flag to check if the character is currently jumping
+
+    private void Start()
     {
-        
+        rb = GetComponent<Rigidbody>(); // Get the Rigidbody component
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (Input.GetKeyDown(jumpKey) && !isJumping)
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // Apply upward force when the jump key is pressed
+            isJumping = true;
+        }
     }
 }
