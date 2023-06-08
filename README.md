@@ -1,6 +1,6 @@
 # **Takım İsmi**
 
-Takım Unity 115
+Unity 115
 
 # Ürün İle İlgili Bilgiler
 
