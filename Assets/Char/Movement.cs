@@ -6,20 +6,34 @@ public class Movement : MonoBehaviour {
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private float _speed = 5;
     [SerializeField] private float _turnSpeed = 360;
+    bool isGround;
     
     private Vector3 _input;
 
     private void Update() {
         GatherInput();
         Look();
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump") && isGround == true)
         {
             _rb.AddForce(new Vector3(0,5,0), ForceMode.Impulse);
         }
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        if(Input.GetKeyDown(KeyCode.LeftShift) && isGround == false)
         {
               Physics.gravity = new Vector3(0, -3.0F, 0);
         }
+        if(Input.GetKeyUp(KeyCode.LeftShift))
+        {
+              Physics.gravity = new Vector3(0, -9.8F, 0);
+        }
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        isGround = true;
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        isGround = false;
     }
 
     private void FixedUpdate() {
