@@ -30,10 +30,12 @@ public class Movement : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         isGround = true;
+        //print ("karada");
     }
     private void OnTriggerExit(Collider other)
     {
         isGround = false;
+        //print("havada");
     }
 
     private void FixedUpdate() {
