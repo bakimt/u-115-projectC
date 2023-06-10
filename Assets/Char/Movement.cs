@@ -7,23 +7,27 @@ public class Movement : MonoBehaviour {
     [SerializeField] private float _speed = 5;
     [SerializeField] private float _turnSpeed = 360;
     bool isGround;
+    bool pressedShift;
     
     private Vector3 _input;
 
     private void Update() {
         GatherInput();
         Look();
-        if(Input.GetButtonDown("Jump") && isGround == true)
+        if(Input.GetButtonDown("Jump") && isGround == true && pressedShift == false)
         {
             _rb.AddForce(new Vector3(0,5,0), ForceMode.Impulse);
         }
         if(Input.GetKeyDown(KeyCode.LeftShift) && isGround == false)
         {
               Physics.gravity = new Vector3(0, -3.0F, 0);
+              pressedShift = true;
+
         }
         if(Input.GetKeyUp(KeyCode.LeftShift))
         {
               Physics.gravity = new Vector3(0, -9.8F, 0);
+              pressedShift = false;
         }
     }
     
