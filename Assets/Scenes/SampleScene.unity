@@ -402,8 +402,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0, g: 0.15004349, b: 1, a: 0.2901961}
-      maxColor: {r: 0.09019607, g: 0.67117006, b: 1, a: 0.27058825}
+      minColor: {r: 0.48531505, g: 0.5282729, b: 0.7735849, a: 0.14901961}
+      maxColor: {r: 0.514151, g: 0.82408917, b: 1, a: 0.14117648}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4944,7 +4944,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26003396}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 24.12, y: 14.21, z: -20.15}
+  m_LocalPosition: {x: 20.2, y: 15.39, z: -35.7}
   m_LocalScale: {x: 3.3069, y: 3.3069, z: 3.3069}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5818,7 +5818,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.06132078, g: 0.8574121, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.86528945, b: 1, a: 1}
   m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
@@ -5828,7 +5828,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.669
+    m_Strength: 0.514
     m_Bias: 0
     m_NormalBias: 0.4
     m_NearPlane: 0.1
@@ -6128,8 +6128,8 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
-  orthographic: 1
+  field of view: 23
+  orthographic: 0
   orthographic size: 12.76
   m_Depth: -1
   m_CullingMask:
@@ -6153,14 +6153,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.24784453, y: 0, z: 0, w: 0.9687998}
-  m_LocalPosition: {x: 8, y: 15.84, z: -40.6}
+  m_LocalRotation: {x: 0.3257087, y: -0, z: -0, w: 0.94547015}
+  m_LocalPosition: {x: 8, y: 43.78, z: -69.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 28.7, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 38.017, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6185,7 +6185,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
@@ -21549,7 +21549,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0, g: 0.15787654, b: 0.4339623, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
