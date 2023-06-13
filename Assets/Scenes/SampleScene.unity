@@ -5058,7 +5058,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87534648}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.58, y: 0.17, z: -15.82}
+  m_LocalPosition: {x: 2.31, y: 0.17, z: -15.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5135,12 +5135,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6161448157782799470, guid: a8fb29b5f891b274d92d76a5b929035e, type: 3}
       propertyPath: m_Materials.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -6161448157782799470, guid: a8fb29b5f891b274d92d76a5b929035e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7d58f5e0f5ecd7b439f2ed70f1cfb23a, type: 2}
+      objectReference: {fileID: 2100000, guid: aa004284cd348de46b687e4473a2c759, type: 2}
     - target: {fileID: -6161448157782799470, guid: a8fb29b5f891b274d92d76a5b929035e, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -5428,7 +5428,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: cb2bbefca27b6a14ba198aee5f8dc1e4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7956c5c6f52caed4a9a4829ced60d72e, type: 2}
+      objectReference: {fileID: 2100000, guid: f6b3046040543ec4d8454c35ff3fc335, type: 2}
     - target: {fileID: 919132149155446097, guid: cb2bbefca27b6a14ba198aee5f8dc1e4, type: 3}
       propertyPath: m_Name
       value: big-rock-04
@@ -11513,12 +11513,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -132554305716376216, guid: ab3fe79713a8017428c0439f4d6f04bc, type: 3}
       propertyPath: m_Materials.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -132554305716376216, guid: ab3fe79713a8017428c0439f4d6f04bc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7d58f5e0f5ecd7b439f2ed70f1cfb23a, type: 2}
+      objectReference: {fileID: 2100000, guid: aa004284cd348de46b687e4473a2c759, type: 2}
     - target: {fileID: -132554305716376216, guid: ab3fe79713a8017428c0439f4d6f04bc, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -16782,7 +16782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 03f3f96a35eb0aa47a807b6cfa625874, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.38
+      value: 11.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 03f3f96a35eb0aa47a807b6cfa625874, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16790,7 +16790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 03f3f96a35eb0aa47a807b6cfa625874, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -26.23
+      value: -22.98
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 03f3f96a35eb0aa47a807b6cfa625874, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16823,7 +16823,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 03f3f96a35eb0aa47a807b6cfa625874, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9086233d3b39af34eb35bf642b272252, type: 2}
+      objectReference: {fileID: 2100000, guid: f6b3046040543ec4d8454c35ff3fc335, type: 2}
     - target: {fileID: 919132149155446097, guid: 03f3f96a35eb0aa47a807b6cfa625874, type: 3}
       propertyPath: m_Name
       value: ruined-rock-02 (1)
