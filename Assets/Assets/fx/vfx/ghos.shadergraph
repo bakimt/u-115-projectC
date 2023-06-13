@@ -490,7 +490,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "02cfe1fea2a04c898608bac10b3aa88b",
     "m_Id": 0,
-    "m_DisplayName": "ScrollSpeed",
+    "m_DisplayName": "ScrollSpeed-2",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -3497,10 +3497,10 @@
     "m_Guid": {
         "m_GuidSerialized": "ef73f74b-b95a-4d36-89f2-fe66ea7aa356"
     },
-    "m_Name": "ScrollSpeed",
+    "m_Name": "ScrollSpeed-2",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "ScrollSpeed",
-    "m_DefaultReferenceName": "_ScrollSpeed",
+    "m_RefNameGeneratedByDisplayName": "ScrollSpeed-2",
+    "m_DefaultReferenceName": "_ScrollSpeed_2",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
