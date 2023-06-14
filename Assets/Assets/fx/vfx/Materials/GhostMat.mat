@@ -45,15 +45,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Dissolve: 1.62
-    - _EdgeWidht: 0
+    - _Dissolve: 0.4
+    - _EdgeWidht: -3.5
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ScrollSpeed: 0
-    - _deneme: 1.18
+    - _deneme: 0
     - _deneme2: 0.75
     m_Colors:
-    - _EdgeColor: {r: 0, g: 47.395573, b: 83.4636, a: 1}
+    - _EdgeColor: {r: 0, g: 2.9622233, b: 5.216475, a: 1}
     - _ScrollSpeed: {r: 0.01, g: 0, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

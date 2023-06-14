@@ -643,7 +643,7 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     },
-    "m_Space": 2,
+    "m_Space": 0,
     "m_PositionSource": 0
 }
 
@@ -3462,7 +3462,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Occlusion",
     "m_StageCapability": 2,
-    "m_Value": 0.8999999761581421,
+    "m_Value": 1.0,
     "m_DefaultValue": 1.0,
     "m_Labels": []
 }
@@ -3557,7 +3557,7 @@
     "m_Value": 0.0,
     "m_FloatType": 1,
     "m_RangeValues": {
-        "x": 0.0,
+        "x": -10.0,
         "y": 10.0
     }
 }
