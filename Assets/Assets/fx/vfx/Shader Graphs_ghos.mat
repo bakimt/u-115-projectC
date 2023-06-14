@@ -58,11 +58,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FresnelPower: 10
+    - _FresnelPower: 3
     - _QueueControl: 0
     - _QueueOffset: 0
     - _alpha: 0
-    - _emiispower: 150
+    - _emiispower: 43
     m_Colors:
     - _Color: {r: 0, g: 0.039134786, b: 0.5019608, a: 0.72156864}
     - _ScrollSpeed: {r: 0.2, g: 0.2, b: 0, a: 0}
