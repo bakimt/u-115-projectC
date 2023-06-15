@@ -5201,7 +5201,7 @@ PrefabInstance:
     - target: {fileID: -6161448157782799470, guid: a8fb29b5f891b274d92d76a5b929035e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2d6eb532d6ebd7a41a5a7af1c867506e, type: 2}
+      objectReference: {fileID: 2100000, guid: aa004284cd348de46b687e4473a2c759, type: 2}
     - target: {fileID: -6161448157782799470, guid: a8fb29b5f891b274d92d76a5b929035e, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -5490,7 +5490,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!65 &427457344
 BoxCollider:
@@ -11917,11 +11917,11 @@ PrefabInstance:
     - target: {fileID: -132554305716376216, guid: ab3fe79713a8017428c0439f4d6f04bc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: aa004284cd348de46b687e4473a2c759, type: 2}
+      objectReference: {fileID: 2100000, guid: cc93ddc343fc75f4e8e374c39fb14993, type: 2}
     - target: {fileID: -132554305716376216, guid: ab3fe79713a8017428c0439f4d6f04bc, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 7956c5c6f52caed4a9a4829ced60d72e, type: 2}
+      objectReference: {fileID: 2100000, guid: aa004284cd348de46b687e4473a2c759, type: 2}
     - target: {fileID: -132554305716376216, guid: ab3fe79713a8017428c0439f4d6f04bc, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
