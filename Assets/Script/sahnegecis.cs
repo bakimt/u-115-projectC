@@ -8,7 +8,7 @@ public class CubeInteraction : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag=="sahne") // Karakterin colliderı ile etkileşim sağlandığında
+        if (other.gameObject.tag == "kopru") // Karakterin colliderı ile etkileşim sağlandığında
         {
             SceneManager.LoadScene("LevelKopru"); // Hedef sahneyi yükle
         }
@@ -16,7 +16,11 @@ public class CubeInteraction : MonoBehaviour
         {
             SceneManager.LoadScene("LevelMeydan"); // Hedef sahneyi yükle
         }
-       
+        if (other.gameObject.tag == "mezarlik") // Karakterin colliderı ile etkileşim sağlandığında
+        {
+            SceneManager.LoadScene("LevelMezarlik");
+        }
+
     }
 
 }

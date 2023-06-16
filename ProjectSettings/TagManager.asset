@@ -6,6 +6,8 @@ TagManager:
   tags:
   - sahne
   - meydan
+  - mezarlik
+  - kopru
   layers:
   - Default
   - TransparentFX
