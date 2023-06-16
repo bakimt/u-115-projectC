@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: acik
-    second: {fileID: 2100000, guid: 201f72ae4a67aeb429cecbae7d392856, type: 2}
+    second: {fileID: 2100000, guid: 8656a3b6a0ba01149bb50f21f9c7447a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
