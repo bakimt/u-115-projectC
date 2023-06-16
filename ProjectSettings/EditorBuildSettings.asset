@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelKopru.unity
     guid: 8e71cc5b9873a4a4389bbe7a4508abee
   - enabled: 1
-    path: "Assets/Scenes/LevelMezarl\u0131k.unity"
+    path: Assets/Scenes/LevelMezarlik.unity
     guid: 86faf4240bd23b342a3de47da3daa68f
   m_configObjects: {}
