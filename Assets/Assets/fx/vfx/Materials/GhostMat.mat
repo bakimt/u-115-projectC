@@ -45,13 +45,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Dissolve: 2
-    - _EdgeWidht: -3.8
+    - _Dissolve: 2.68
+    - _EdgeWidht: -9.5
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ScrollSpeed: 0
     - _deneme: 0
     - _deneme2: 0.75
+    - _emmisivePower: 6.7
     m_Colors:
     - _BaseColorMask: {r: 0.7971698, g: 0.9122896, b: 1, a: 0}
     - _EdgeColor: {r: 0, g: 0.31895515, b: 0.83137256, a: 1}
