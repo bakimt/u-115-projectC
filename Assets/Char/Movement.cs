@@ -8,12 +8,24 @@ public class Movement : MonoBehaviour {
     [SerializeField] private float _turnSpeed = 360;
     bool isGround;
     bool pressedShift;
-    
+    private Animator animator;
     private Vector3 _input;
 
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     private void Update() {
         GatherInput();
         Look();
+        if (_rb.velocity.magnitude > 0)
+        {
+            animator.SetBool("isMoving", true);
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
+        }
         if(Input.GetButtonDown("Jump") && isGround == true && pressedShift == false)
         {
             _rb.AddForce(new Vector3(0,5,0), ForceMode.Impulse);
