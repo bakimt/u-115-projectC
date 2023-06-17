@@ -66,7 +66,7 @@ Bu oyun, bulmacaları çözmekten zevk alan ve hikayelerle ilgili oyunlardan key
 
 ## Product Backlog URL
 
-
+https://trello.com/b/i4sJJB1M/u-115-sprint-2
 
 ---
 
