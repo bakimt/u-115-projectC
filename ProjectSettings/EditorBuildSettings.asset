@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/LevelMeydan.unity
+    guid: 4a3d822229d8163408f5fbba1b3a6ee9
+  - enabled: 1
+    path: Assets/Scenes/LevelKopru.unity
+    guid: 8e71cc5b9873a4a4389bbe7a4508abee
+  - enabled: 1
+    path: Assets/Scenes/LevelMezarlik.unity
+    guid: 86faf4240bd23b342a3de47da3daa68f
   m_configObjects: {}
