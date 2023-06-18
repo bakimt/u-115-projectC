@@ -44,7 +44,25 @@ Bu oyun, bulmacaları çözmekten zevk alan ve hikayelerle ilgili oyunlardan key
 
 # Sprint 1
 
+- Sprint içinde tamamlanması tahmin edilen puan: 120 Puan
 
+- Puan tamamlama mantığı: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 120 ile başlaması gerektiğine karar verildi.
+- Sprint board update: Sprint board screenshotları:
+![Ekran Alıntısı](https://github.com/bakimt/u-115-projectC/assets/64227311/37e599af-af88-451f-85e6-5626d584e649)
+
+- Ürün Durumu: Ekran görüntüleri:
+![image](https://github.com/bakimt/u-115-projectC/assets/64227311/13c24927-8466-4b27-a490-4c016f1e081a)
+![image (1)](https://github.com/bakimt/u-115-projectC/assets/64227311/bea49d88-ee11-4982-b98e-0b63d2bf35ab)
+![image (2)](https://github.com/bakimt/u-115-projectC/assets/64227311/2c14c0cf-5e40-41b5-90d6-d4d4491cc0cc)
+![image (3)](https://github.com/bakimt/u-115-projectC/assets/64227311/7ad4feb2-b607-49b4-80e7-c1063eb5553f)
+![image (4)](https://github.com/bakimt/u-115-projectC/assets/64227311/24ac5998-8c51-4841-b9b2-b01050d8c56f)
+![image (5)](https://github.com/bakimt/u-115-projectC/assets/64227311/7b4f1e92-6ebf-4783-bc13-55b5cd943dfe)
+
+- Sprint Review: Alınan kararlar: Oyunun genel görüntüsünün elde edilebilmesi için modeller, materyaller ve temel hareketler oluşturuldu.Bir sonraki sprintte eklenilebilecek öğeler ve eksiklikler değerlendirilmiştir.
+
+- Sprint Retrospective:
+  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
+  - Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
 
 
 ---
