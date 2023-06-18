@@ -14,6 +14,8 @@ public class Movement : MonoBehaviour
     private bool _isGrounded;
     private bool _isRunning;
     private bool _isGliding;
+    private bool _isJumping;
+    private bool _isMoving;
 
     private void Start()
     {
@@ -40,13 +42,17 @@ public class Movement : MonoBehaviour
             {
                 _animator.SetFloat("Speed", 0f);
             }
+
+            _animator.SetBool("isJumping", _isJumping);
         }
         else
         {
             _animator.SetFloat("Speed", 0f);
+            _animator.SetBool("isJumping", false);
         }
 
         _animator.SetBool("isGliding", _isGliding);
+        _animator.SetBool("isMoving", _isMoving);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -69,13 +75,15 @@ public class Movement : MonoBehaviour
         _input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         _isRunning = Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W);
         _isGliding = Input.GetKey(KeyCode.Space) && !_isGrounded && !_isRunning && _input.magnitude > 0;
+        _isJumping = Input.GetKeyDown(KeyCode.Space) && _isGrounded;
+        _isMoving = _input.magnitude > 0;
     }
 
     private void Look()
     {
         if (_input == Vector3.zero) return;
 
-        var rot = Quaternion.LookRotation(_input.ToIso(), Vector3.up);
+        var rot = Quaternion.LookRotation(_input, Vector3.up);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, _turnSpeed * Time.deltaTime);
     }
 
