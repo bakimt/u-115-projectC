@@ -17,7 +17,7 @@ Purgatorio
 
 ## Product Backlog URL
 
-https://miro.com/app/board/uXjVM9rWJRI=/
+https://miro.com/app/board/uXjVM9rWJRI=/?share_link_id=871223250876
 
 ## Ürün Açıklaması
 
