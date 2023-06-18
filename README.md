@@ -1,6 +1,23 @@
+-# **Takım İsmi**
+
+Unity 115
+
+# Ürün İle İlgili Bilgiler
+
+## Takım Elemanları
+- Melisa Oktay: Product Owner / Developer
+- Mustafa Tahsin Baki: Scrum Master / Developer
+- Mert Kıyak: Developer
+- Nuşin Beyza Ericek: Developer
+- Batuhan Külli: Developer
+
 ## Ürün İsmi
 
 Hiraeth
+
+## Product Backlog URL
+
+https://miro.com/app/board/uXjVM9rWJRI=/?share_link_id=871223250876
 
 ## Ürün Açıklaması
 
