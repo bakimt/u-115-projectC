@@ -1,4 +1,14 @@
+## Ürün İsmi
+
+Hiraeth
+
+## Ürün Açıklaması
+
 "Hiraeth", ölüler dünyasından bir gün normal dünyaya dönmeye çalışan ailesiyle beraber geride bıraktıklarını ziyaret etmek isteyen bir ruhun heyecan dolu macerasını anlatan bir puzzle temelli bilgisayar oyunudur.Karakterimiz oyun boyunca ruhlar dünyasındak kaybettiği ailesini arar ve her bir aile üyesini topladığında normal dünyaya geçmek için olan bozuk köprümüzün bir parçası tamamnlanır. Oyuncular, bu gizemli ruhu kontrol ederek, çeşitli zorluklarla dolu bulmacaları çözerek ve ipuçlarını takip ederek ailesini bulma yolunda ilerlerler. Eski evlerde, gizli geçitlerde ve unutulmuş mekanlarda keşif yaparak, karakterin geçmişine dair ipuçlarını bir araya getirirler. Oyuncular, farklı bulmaca türlerini çözerken hikayeyi ilerletir ve zorlu engelleri aşarak ailesine ulaşmak için yolu açarlar. Grafiklerin ve atmosferin derinliğiyle birleşen sürükleyici hikaye, oyuncuları duygusal bir yolculuğa çıkarırken, aynı zamanda zekalarını da sınar. Hiraeth, ruhun geçmişiyle bugünü arasında köprü kurarak, oyunculara unutulmaz bir deneyim sunar.
+
+## Product Backlog URL
+
+https://miro.com/app/board/uXjVM9rWJRI=/?share_link_id=871223250876
 
 
 - **Oyunun birincil fonksiyonu**: Oyunculara bir hikaye çerçevesinde bulmacalar çözerek ilerlemelerini sağlamaktır. Oyuncular, ruhun ailesini bulma macerasına eşlik ederken, farklı zorluk seviyelerine sahip bulmacaları çözmek için mantık, dikkat, hafıza ve problem çözme becerilerini kullanırlar.
