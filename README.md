@@ -17,7 +17,7 @@ Project C
 
 ## Product Backlog URL
 
-https://trello.com/b/WEYs9lvI/u-115
+https://miro.com/app/board/uXjVM9rWJRI=/
 
 ## Ürün Açıklaması
 
