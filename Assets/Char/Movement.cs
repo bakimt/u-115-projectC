@@ -30,35 +30,23 @@ public class Movement : MonoBehaviour
         {
             if (_isRunning)
             {
-                _animator.SetBool("isRunning", true);
-                _animator.SetBool("isWalking", false);
-                _animator.SetBool("isJumping", false);
-                _animator.SetBool("isGliding", false);
+                _animator.SetFloat("Speed", _runSpeed);
             }
             else if (_input.magnitude > 0)
             {
-                _animator.SetBool("isWalking", true);
-                _animator.SetBool("isRunning", false);
-                _animator.SetBool("isJumping", false);
-                _animator.SetBool("isGliding", false);
+                _animator.SetFloat("Speed", _walkSpeed);
             }
             else
             {
-                _animator.SetBool("isWalking", false);
-                _animator.SetBool("isRunning", false);
-                _animator.SetBool("isJumping", false);
-                _animator.SetBool("isGliding", false);
+                _animator.SetFloat("Speed", 0f);
             }
         }
         else
         {
-            _animator.SetBool("isWalking", false);
-            _animator.SetBool("isRunning", false);
-            _animator.SetBool("isJumping", false);
-            _animator.SetBool("isGliding", false);
+            _animator.SetFloat("Speed", 0f);
         }
 
-        Move();
+        _animator.SetBool("isGliding", _isGliding);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -91,19 +79,22 @@ public class Movement : MonoBehaviour
         transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, _turnSpeed * Time.deltaTime);
     }
 
-    private void Move()
-    {
-        float speed = _isGliding ? _glideSpeed : (_isRunning ? _runSpeed : _walkSpeed);
-        _animator.SetFloat("Speed", speed);
-    }
-
     private void ApplyMovement()
     {
         Vector3 movement = transform.forward * _input.magnitude;
         if (_isGliding)
         {
-            movement += Vector3.down;
+            movement += Vector3.down * _glideSpeed;
         }
+        else if (_isRunning)
+        {
+            movement *= _runSpeed;
+        }
+        else
+        {
+            movement *= _walkSpeed;
+        }
+
         _rb.MovePosition(transform.position + movement * Time.deltaTime);
     }
 }
