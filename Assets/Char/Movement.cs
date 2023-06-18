@@ -73,9 +73,9 @@ public class Movement : MonoBehaviour
     private void GatherInput()
     {
         _input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        _isRunning = Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W);
-        _isGliding = Input.GetKey(KeyCode.Space);
-        _isJumping = Input.GetKey(KeyCode.Space);
+        _isRunning = (Input.GetKey(KeyCode.LeftShift) && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)));
+        _isGliding = Input.GetKey(KeyCode.Space) && !_isGrounded && !_isRunning && _input.magnitude > 0;
+        _isJumping = Input.GetKeyDown(KeyCode.Space) && _isGrounded;
         _isMoving = _input.magnitude > 0;
     }
 
