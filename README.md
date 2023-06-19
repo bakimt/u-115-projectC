@@ -65,9 +65,8 @@ Bu oyun, bulmacaları çözmekten zevk alan ve hikayelerle ilgili oyunlardan key
   - Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
 
 
-
-Daily Scrum:
-Daily Scrumlar, 1. sprint çoğu takım arkadaşımızın finallerine denk geldiği için genelde whatsapp veya discord üzerinden gerçekleştirilmiştir. Onun dışında en az 2 günde 1 Discord üzerinden meeting gerçekleşmiştir.[U-115 daily scrum.docx](https://github.com/bakimt/u-115-projectC/files/11790889/U-115.daily.scrum.docx) birkaç günün daily scrum örneği ektedir.
+-Daily Scrum:
+  -Daily Scrumlar, 1. sprint çoğu takım arkadaşımızın finallerine denk geldiği için genelde whatsapp veya discord üzerinden gerçekleştirilmiştir. Onun dışında en az 2 günde 1 Discord üzerinden meeting gerçekleşmiştir.[U-115 daily scrum.docx](https://github.com/bakimt/u-115-projectC/files/11790889/U-115.daily.scrum.docx) birkaç günün daily scrum örneği ektedir.
 
 
 ---
