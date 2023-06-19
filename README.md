@@ -47,6 +47,9 @@ Bu oyun, bulmacaları çözmekten zevk alan ve hikayelerle ilgili oyunlardan key
 - Sprint içinde tamamlanması tahmin edilen puan: 120 Puan
 
 - Puan tamamlama mantığı: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 120 ile başlaması gerektiğine karar verildi.
+
+- Daily Scrum: Daily Scrumlar, 1. sprint çoğu takım arkadaşımızın finallerine denk geldiği için genelde whatsapp veya discord üzerinden gerçekleştirilmiştir. Onun dışında en az 2 günde 1 Discord üzerinden meeting gerçekleşmiştir.[U-115 daily scrum.docx](https://github.com/bakimt/u-115-projectC/files/11790889/U-115.daily.scrum.docx) birkaç günün daily scrum örneği ektedir.
+
 - Sprint board update: Sprint board screenshotları:
 ![Ekran Alıntısı](https://github.com/bakimt/u-115-projectC/assets/64227311/37e599af-af88-451f-85e6-5626d584e649)
 
@@ -64,9 +67,6 @@ Bu oyun, bulmacaları çözmekten zevk alan ve hikayelerle ilgili oyunlardan key
   - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
   - Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
 
-
--Daily Scrum:
-  -Daily Scrumlar, 1. sprint çoğu takım arkadaşımızın finallerine denk geldiği için genelde whatsapp veya discord üzerinden gerçekleştirilmiştir. Onun dışında en az 2 günde 1 Discord üzerinden meeting gerçekleşmiştir.[U-115 daily scrum.docx](https://github.com/bakimt/u-115-projectC/files/11790889/U-115.daily.scrum.docx) birkaç günün daily scrum örneği ektedir.
 
 
 ---
