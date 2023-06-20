@@ -7,15 +7,40 @@ public class Movement : MonoBehaviour
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private Animator _animator;
     [SerializeField] private float _walkSpeed = 0.5f;
-    [SerializeField] private float _runSpeed = 1f;
-    [SerializeField] private float _glideSpeed = 2f;
+    [SerializeField] private float _runSpeed = 3f;
+    [SerializeField] private float _glideSpeed = 4f;
     [SerializeField] private float _turnSpeed = 360;
     private Vector3 _input;
-    private bool _isGrounded;
     private bool _isRunning;
     private bool _isGliding;
     private bool _isJumping;
     private bool _isMoving;
+    private bool _isGrounded; // isGrounded parametresi
+    [SerializeField] private bool isInteracting;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Interactable"))
+        {
+            isInteracting = true;
+        }
+        else if (other.CompareTag("Ground"))
+        {
+            _isGrounded = true; // Collider'ın etkileşime geçtiği yerde _isGrounded parametresini true yap
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Interactable"))
+        {
+            isInteracting = false;
+        }
+        else if (other.CompareTag("Ground"))
+        {
+            _isGrounded = false; // Collider'ın etkileşimden çıktığı yerde _isGrounded parametresini false yap
+        }
+    }
 
     private void Start()
     {
@@ -28,7 +53,7 @@ public class Movement : MonoBehaviour
         GatherInput();
         Look();
 
-        if (_isGrounded)
+        if (_isGrounded) // _isGrounded parametresine göre hareket durumunu kontrol et
         {
             if (_isRunning)
             {
@@ -53,16 +78,6 @@ public class Movement : MonoBehaviour
 
         _animator.SetBool("isGliding", _isGliding);
         _animator.SetBool("isMoving", _isMoving);
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        _isGrounded = true;
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        _isGrounded = false;
     }
 
     private void FixedUpdate()
