@@ -20,6 +20,6 @@ public class DestroyOnInteract : MonoBehaviour, IInteractable
 
     public void OnEndHover()
     {
-        Debug.Log($"We have lost {gameObject.name}");
+        Debug.Log($"We have lost this object");
     }
 }
