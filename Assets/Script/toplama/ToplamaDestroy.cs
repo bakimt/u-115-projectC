@@ -18,7 +18,7 @@ public class ToplamaDestroy : MonoBehaviour
 
             if (destroyCount == 5)
             {
-                Debug.Log("2 nesne yok edildi");
+                Debug.Log("kopru olacak");
             }
         }
     }
