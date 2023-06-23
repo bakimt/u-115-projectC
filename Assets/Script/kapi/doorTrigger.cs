@@ -11,7 +11,7 @@ public class doorTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag ("Player"))
-        [
+        {
             if (openDoor)
             {
                 door.Play("acilKapi", 0, 0.0f);
@@ -23,6 +23,6 @@ public class doorTrigger : MonoBehaviour
                 door.Play("kapanKapi", 0, 0.0f);
                 gameObject.SetActive(false);
             }
-        ]
+    }
     }
 }
