@@ -8,6 +8,8 @@ TagManager:
   - meydan
   - mezarlik
   - kopru
+  - Ground
+  - Interactable
   layers:
   - Default
   - TransparentFX

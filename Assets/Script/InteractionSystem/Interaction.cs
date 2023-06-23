@@ -16,6 +16,8 @@ public class BarrelInteraction : MonoBehaviour
     {
         CreateTextContainer();
         SetInteractText("Kitli"); // Varsayılan metni ayarla
+        interactText.enabled = false;
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -24,6 +26,7 @@ public class BarrelInteraction : MonoBehaviour
         {
             isInteracting = true;
             interactText.enabled = true; // Metin kutusunu görünür yap
+
         }
     }
 
@@ -40,7 +43,7 @@ public class BarrelInteraction : MonoBehaviour
     {
         if (isInteracting)
         {
-            // Etkileşim durumunda yapılması gereken işlemler buraya yazılabilir
+            Debug.Log("sa");// Etkileşim durumunda yapılması gereken işlemler buraya yazılabilir
         }
     }
 
