@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028437, g: 0.22571532, b: 0.3069246, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028393, g: 0.22571468, b: 0.3069232, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -26866,10 +26866,10 @@ PrefabInstance:
       addedObject: {fileID: 1897328868}
     - targetCorrespondingSourceObject: {fileID: 7946682768687332324, guid: 94226d89302c52b42b4ca53d91de833c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1897328869}
+      addedObject: {fileID: 1897328870}
     - targetCorrespondingSourceObject: {fileID: 7946682768687332324, guid: 94226d89302c52b42b4ca53d91de833c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1897328870}
+      addedObject: {fileID: 1897328872}
   m_SourcePrefab: {fileID: 100100000, guid: 94226d89302c52b42b4ca53d91de833c, type: 3}
 --- !u!1 &1897328864 stripped
 GameObject:
@@ -26897,23 +26897,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1897328869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897328864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fab7c804c24bba347be84717c27d343a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorAnim: {fileID: 1897328868}
-  openDoorClip: {fileID: 7400000, guid: 95d69a5e74327dc4a8a0ef68cd71df09, type: 2}
-  closeDoorClip: {fileID: 7400000, guid: cd6af9315af35264a9685660971dcbdb, type: 2}
-  openDoor: 0
-  closeDoor: 0
 --- !u!65 &1897328870
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26935,6 +26918,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.28, y: 0.1, z: 28.66}
   m_Center: {x: 0.25, y: 0.05, z: -35.21}
+--- !u!114 &1897328872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897328864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fab7c804c24bba347be84717c27d343a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorAnim: {fileID: 0}
+  openDoorClip: {fileID: 0}
+  closeDoorClip: {fileID: 0}
+  openDoor: 0
+  closeDoor: 0
 --- !u!1 &1911594223
 GameObject:
   m_ObjectHideFlags: 0

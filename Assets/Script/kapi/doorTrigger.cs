@@ -1,28 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class doorTrigger : MonoBehaviour
+public class DoorTrigger : MonoBehaviour
 {
-    [SerializeField] private Animator doorAnim = null;
-    [SerializeField] private AnimationClip openDoorClip = null;
-    [SerializeField] private AnimationClip closeDoorClip = null;
-    [SerializeField] private bool openDoor = false;
-    [SerializeField] private bool closeDoor = false;
+    public GameObject kapiMesh;
+    private bool isPlayerInside = false;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            openDoor = true;
-                doorAnim.Play(openDoorClip.name, 0, 0.0f);
-                Debug.Log("sa");
-            if (closeDoorClip != null)
-            {
-                closeDoor = false;
-                doorAnim.Play(closeDoorClip.name, 0, 0.0f);
-                Debug.Log("saasasasa");
-            }
+            isPlayerInside = true;
+            kapiMesh.GetComponent<Animator>().Play("OpenDoor");
+            Debug.Log("Girdin");
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isPlayerInside = false;
+            Debug.Log("Çıktın");
+        }
+    }
+
+    private void Update()
+    {
+        if (!isPlayerInside)
+        {
+            kapiMesh.GetComponent<Animator>().Play("CloseDoor");
         }
     }
 }
