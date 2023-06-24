@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class doorTrigger : MonoBehaviour
 {
-    [SerializeField] private Animator door = null;
+    [SerializeField] private Animator doorAnim = null;
+    [SerializeField] private AnimationClip openDoorClip = null;
+    [SerializeField] private AnimationClip closeDoorClip = null;
     [SerializeField] private bool openDoor = false;
     [SerializeField] private bool closeDoor = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag ("Player"))
+        if (other.CompareTag("Player"))
         {
-            if (openDoor)
+            openDoor = true;
+                doorAnim.Play(openDoorClip.name, 0, 0.0f);
+                Debug.Log("sa");
+            if (closeDoorClip != null)
             {
-                door.Play("acilKapi", 0, 0.0f);
-                gameObject.SetActive(false);
+                closeDoor = false;
+                doorAnim.Play(closeDoorClip.name, 0, 0.0f);
+                Debug.Log("saasasasa");
             }
-
-            else if (closeDoor)
-            {
-                door.Play("kapanKapi", 0, 0.0f);
-                gameObject.SetActive(false);
-            }
-    }
+        }
     }
 }
