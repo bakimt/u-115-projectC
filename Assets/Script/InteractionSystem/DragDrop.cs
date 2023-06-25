@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class DragDrop : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Vector3 mOffset;
+    private float mZCoord;
+
+    void OnMouseDown()
     {
-        
+        mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
+        mOffset = gameObject.transform.position - GetMouseWorldPos();
     }
 
-    // Update is called once per frame
-    void Update()
+    private Vector3 GetMouseWorldPos()
     {
-        
+        Vector3 mousePoint = Input.mousePosition;
+        mousePoint.z = mZCoord;
+        return Camera.main.ScreenToWorldPoint(mousePoint);
+    }
+
+    void OnMouseDrag()
+    {
+        transform.position = GetMouseWorldPos() + mOffset;
     }
 }
