@@ -19563,6 +19563,7 @@ GameObject:
   - component: {fileID: 1642002072}
   - component: {fileID: 1642002071}
   - component: {fileID: 1642002070}
+  - component: {fileID: 1642002073}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -19720,6 +19721,41 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 28912365}
+--- !u!114 &1642002073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642002068}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62f748f5292bb343be9e6b0c84416d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_ShowDebugText: 0
+  m_ChildCameras: []
+  m_ActivateAfter: 0
+  m_MinDuration: 0
+  m_RandomizeChoice: 0
+  m_DefaultBlend:
+    m_Style: 0
+    m_Time: 0
+    m_CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  m_CustomBlends: {fileID: 0}
 --- !u!1001 &1729483134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25169,6 +25205,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d0a85c28254596945a2d7fa25a9e079e, type: 2}
+    - target: {fileID: -1111511048994875274, guid: 8d539299b7df40b4190c671a46da1e0e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0f72674bf10f7e34d9d50e22c719ff7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 8d539299b7df40b4190c671a46da1e0e, type: 3}
       propertyPath: m_Name
       value: bush-3
