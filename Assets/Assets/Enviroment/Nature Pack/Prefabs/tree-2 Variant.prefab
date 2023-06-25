@@ -13,7 +13,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1b9d9ad660cbaad4e9ddf65b8ea36bc7, type: 3}
-<<<<<<< HEAD
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
@@ -26,8 +25,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1b9d9ad660cbaad4e9ddf65b8ea36bc7, type: 3}
-=======
->>>>>>> parent of ebdfbb7 (mezarlık değişiklik)
       propertyPath: m_LocalPosition.x
       value: 159.10074
       objectReference: {fileID: 0}
@@ -66,6 +63,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1b9d9ad660cbaad4e9ddf65b8ea36bc7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1b9d9ad660cbaad4e9ddf65b8ea36bc7, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1b9d9ad660cbaad4e9ddf65b8ea36bc7, type: 3}
       propertyPath: m_Name
