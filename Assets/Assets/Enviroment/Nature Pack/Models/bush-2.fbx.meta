@@ -3,7 +3,12 @@ guid: 30038a05df34f394f991052f219b7b19
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bush_lp_m__bush__albedo_tga.001
+    second: {fileID: 2100000, guid: d0a85c28254596945a2d7fa25a9e079e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
