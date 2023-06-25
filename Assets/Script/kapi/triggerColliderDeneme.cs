@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class triggerColliderDeneme : MonoBehaviour
 {
-    [SerializeField] Animator kapiMesh;
+    public GameObject doorMesh;
 
-    void Start ()
+    void Start()
     {
-        kapiMesh = GetComponent<Animator>();
+        doorMesh.GetComponent<Animator>().SetBool("closeDoor", false);
+        doorMesh.GetComponent<Animator>().SetBool("openDoor", false);
     }
 
     void OnTriggerEnter(Collider other)
     {
-
-        kapiMesh.SetBool("closeDoor", false);
-        if (other.CompareTag("Player")) kapiMesh.SetBool("openDoor", true);
+        doorMesh.GetComponent<Animator>().SetBool("closeDoor", false);
+        if (other.CompareTag("Player")) doorMesh.GetComponent<Animator>().SetBool("openDoor", true);
+    }
+    void OnTriggerExit(Collider other)
+    {
+        doorMesh.GetComponent<Animator>().SetBool("openDoor", false);
+        if (other.CompareTag("Player")) doorMesh.GetComponent<Animator>().SetBool("closeDoor", true);
     }
 }

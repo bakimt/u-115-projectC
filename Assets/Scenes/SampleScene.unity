@@ -5169,7 +5169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 603721129}
-  m_PathPosition: 20.628891
+  m_PathPosition: 24.643702
   m_PositionUnits: 1
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 4.01
@@ -13565,8 +13565,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308368737}
-  m_LocalRotation: {x: 0.22888765, y: 0.070781946, z: -0.016689574, w: 0.9707326}
-  m_LocalPosition: {x: -9.990074, y: 1.7414303, z: 15.807632}
+  m_LocalRotation: {x: 0.24230902, y: 0.07170244, z: -0.017960018, w: 0.9673792}
+  m_LocalPosition: {x: -6.0071106, y: 1.9958706, z: 15.373856}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13706,7 +13706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab3fe79713a8017428c0439f4d6f04bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.3
+      value: 30.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab3fe79713a8017428c0439f4d6f04bc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13714,7 +13714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab3fe79713a8017428c0439f4d6f04bc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -39.37
+      value: -40.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab3fe79713a8017428c0439f4d6f04bc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21157,8 +21157,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642002068}
-  m_LocalRotation: {x: 0.22888765, y: 0.070781946, z: -0.016689574, w: 0.9707326}
-  m_LocalPosition: {x: -9.990074, y: 1.7414303, z: 15.807632}
+  m_LocalRotation: {x: 0.24230902, y: 0.07170244, z: -0.017960018, w: 0.9673792}
+  m_LocalPosition: {x: -6.0071106, y: 1.9958706, z: 15.373856}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21241,11 +21241,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
+  near clip plane: 0.1
+  far clip plane: 5000
   field of view: 50
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -26865,34 +26865,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 2506658088076296158, guid: 94226d89302c52b42b4ca53d91de833c, type: 3}
     m_RemovedGameObjects:
     - {fileID: 5512758416395481816, guid: 94226d89302c52b42b4ca53d91de833c, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7946682768687332324, guid: 94226d89302c52b42b4ca53d91de833c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1897328871}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94226d89302c52b42b4ca53d91de833c, type: 3}
 --- !u!1 &1897328864 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7946682768687332324, guid: 94226d89302c52b42b4ca53d91de833c, type: 3}
-  m_PrefabInstance: {fileID: 1897328863}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1897328871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897328864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fab7c804c24bba347be84717c27d343a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!95 &1897328873 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3845495805948277083, guid: 94226d89302c52b42b4ca53d91de833c, type: 3}
   m_PrefabInstance: {fileID: 1897328863}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1911594223
@@ -27302,7 +27283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102474572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.69, y: 1.19, z: -23.55}
+  m_LocalPosition: {x: 66.69, y: 1.19, z: -23.33}
   m_LocalScale: {x: 5.7199, y: 5.7199, z: 5.7199}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27321,7 +27302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77158bdaa3cfeef4a845a44fa7532626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kapiMesh: {fileID: 1897328873}
+  doorMesh: {fileID: 1897328864}
 --- !u!1001 &2109897231
 PrefabInstance:
   m_ObjectHideFlags: 0
