@@ -4,39 +4,24 @@ using UnityEngine;
 
 public class sagSol : MonoBehaviour
 {
-    public float speed = 5f; 
-    public float distance = 5f; 
+    public float moveSpeed = 5f; // Hareket hızı
+    public float moveRange = 5f; // Hareket aralığı
 
-    private Vector3 initialPosition; 
-    private bool isMovingRight = true; 
+    private float initialX; // İlk konumun x koordinatı
 
     private void Start()
     {
-        initialPosition = transform.position; 
+        initialX = transform.position.x; // İlk konumu kaydet
     }
 
     private void Update()
     {
- 
-        if (isMovingRight)
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
-        else
-            transform.Translate(Vector3.left * speed * Time.deltaTime);
+        // Hareket hesaplaması
+        float movement = Mathf.Sin(Time.time * moveSpeed) * moveRange;
+        Vector3 newPosition = new Vector3(initialX + movement, transform.position.y, transform.position.z);
 
-
-        if (Mathf.Abs(transform.position.x - initialPosition.x) >= distance)
-            ChangeDirection();
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-            ChangeDirection();
-    }
-
-    private void ChangeDirection()
-    {
-        isMovingRight = !isMovingRight; 
+        // Yeni pozisyonu atama
+        transform.position = newPosition;
     }
 }
 
