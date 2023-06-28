@@ -940,7 +940,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6113246011424387101, guid: 49a83b370dfdd4b408fe3574d18472f9, type: 3}
   m_PrefabInstance: {fileID: 4484187168409019428}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &252528193
+--- !u!4 &252528199 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6889747079958522535, guid: 49a83b370dfdd4b408fe3574d18472f9, type: 3}
+  m_PrefabInstance: {fileID: 4484187168409019428}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &252528200
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -949,15 +954,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 252528192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04438b1944e07fe4e9b641445afe40f8, type: 3}
+  m_Script: {fileID: 11500000, guid: 495c8e33ff5bcd240a33f1f8a9dd28aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetSceneName: 
---- !u!4 &252528199 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6889747079958522535, guid: 49a83b370dfdd4b408fe3574d18472f9, type: 3}
-  m_PrefabInstance: {fileID: 4484187168409019428}
-  m_PrefabAsset: {fileID: 0}
+  MoveSpeed: 6
+  charAnimator: {fileID: 0}
 --- !u!1001 &261095232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9396,6 +9397,10 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5688699147246946817, guid: 49a83b370dfdd4b408fe3574d18472f9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5688699147246946817, guid: 49a83b370dfdd4b408fe3574d18472f9, type: 3}
       propertyPath: _walkSpeed
       value: 8
       objectReference: {fileID: 0}
@@ -9485,5 +9490,5 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6113246011424387101, guid: 49a83b370dfdd4b408fe3574d18472f9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 252528193}
+      addedObject: {fileID: 252528200}
   m_SourcePrefab: {fileID: 100100000, guid: 49a83b370dfdd4b408fe3574d18472f9, type: 3}
