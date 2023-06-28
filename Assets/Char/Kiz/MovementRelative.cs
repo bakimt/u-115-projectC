@@ -28,11 +28,12 @@ public class MovementRelative : MonoBehaviour
         {
             charAnimator.SetBool("isMoving", true);
         }
-        if(isMoving == false)
+        else
         {
             charAnimator.SetBool("isMoving", false);
         }
     }
+
     void Move()
     {
         float horInput = Input.GetAxis("Horizontal");

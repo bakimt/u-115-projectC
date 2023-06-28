@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b6c3cc26001aab741903e37a2eb81c31
+guid: dfdec2114b729894b81b213e5b7558fc
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: karga-goz
-    second: {fileID: 2100000, guid: 4eaabc5f835a4a548879cd359b59ca3e, type: 2}
+      name: kilise-mat
+    second: {fileID: 2100000, guid: 61f9be5d11220c1458148f09b454783e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -47,9 +47,9 @@ ModelImporter:
     sortHierarchyByName: 1
     importPhysicalCameras: 1
     importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
