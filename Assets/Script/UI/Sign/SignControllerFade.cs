@@ -9,6 +9,7 @@ public class SignControllerFade : MonoBehaviour
     [SerializeField] private bool fadeOut = false;
     private bool isPlayerInRange = false;
 
+
     public void Show()
     {
         fadeIn = true;
@@ -25,7 +26,7 @@ public class SignControllerFade : MonoBehaviour
         {
             if (canvasGroup.alpha < 1)
             {
-                canvasGroup.alpha += Time.deltaTime;
+                canvasGroup.alpha += Time.deltaTime / 3f;
                 if (canvasGroup.alpha >= 1)
                 {
                     fadeIn = false;
@@ -34,7 +35,7 @@ public class SignControllerFade : MonoBehaviour
         }
         if (fadeOut)
         {
-            if (canvasGroup.alpha > 0)
+            if (canvasGroup.alpha >= 0)
             {
                 canvasGroup.alpha -= Time.deltaTime;
                 if (canvasGroup.alpha == 0)
