@@ -35,7 +35,7 @@ public class SignControllerFade : MonoBehaviour
         }
         if (fadeOut)
         {
-            if (canvasGroup.alpha >= 0)
+            if (canvasGroup.alpha > 0)
             {
                 canvasGroup.alpha -= Time.deltaTime;
                 if (canvasGroup.alpha == 0)
