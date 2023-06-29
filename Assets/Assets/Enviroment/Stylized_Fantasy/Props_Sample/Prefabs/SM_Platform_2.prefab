@@ -342,6 +342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4153560371519434839}
   - component: {fileID: 9222939446041675558}
+  - component: {fileID: 8942531401097788033}
   m_Layer: 0
   m_Name: SM_Platform_2
   m_TagString: Untagged
@@ -368,7 +369,7 @@ Transform:
   - {fileID: 5716834332115442841}
   - {fileID: 6341778585289688788}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!205 &9222939446041675558
 LODGroup:
@@ -406,6 +407,27 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1249561035454228644}
   m_Enabled: 1
+--- !u!65 &8942531401097788033
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3670356225217686253}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9942642, y: 0.15448052, z: 2.0567007}
+  m_Center: {x: -1.0149822, y: 0.029068857, z: -0.013833282}
 --- !u!1 &5296872209543677839
 GameObject:
   m_ObjectHideFlags: 0
