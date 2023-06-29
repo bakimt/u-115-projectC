@@ -13,11 +13,13 @@ public class SignControllerFade : MonoBehaviour
     public void Show()
     {
         fadeIn = true;
+        fadeOut = false;
     }
 
     public void Hide()
     {
         fadeOut = true;
+        fadeIn = false;
     }
 
     void Update()
@@ -38,7 +40,7 @@ public class SignControllerFade : MonoBehaviour
             if (canvasGroup.alpha > 0)
             {
                 canvasGroup.alpha -= Time.deltaTime;
-                if (canvasGroup.alpha == 0)
+                if (canvasGroup.alpha <= 0)
                 {
                     fadeOut = false;
                 }

@@ -6,12 +6,15 @@ public class MovementRelative : MonoBehaviour
 {
     Transform cam;
     Rigidbody charRB;
-    [SerializeField] float MoveSpeed = 15;
+    [SerializeField] float MoveSpeed = 15f;
+    [SerializeField] float JumpForce = 5f;
+    [SerializeField] float RunSpeed = 15f;
     public Animator charAnimator;
     bool isGrounded;
     bool isGliding;
     bool isJumping;
     bool isMoving = false;
+    bool isRunning = false;
 
     void Start()
     {
@@ -19,11 +22,11 @@ public class MovementRelative : MonoBehaviour
         charAnimator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         cam = Camera.main.transform;
         Move();
+        Jump();
         if (isMoving == true)
         {
             charAnimator.SetBool("isMoving", true);
@@ -58,6 +61,39 @@ public class MovementRelative : MonoBehaviour
         else
         {
             isMoving = false;
+        }
+    }
+
+    void Jump()
+    {
+        if (Input.GetButtonDown("Jump") && isGrounded == true)
+        {
+            charRB.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
+            isGrounded = false;
+            isJumping = true;
+            charAnimator.SetBool("isJumping", true);
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+            isJumping = false;
+            charAnimator.SetBool("isJumping", false);
+        }
+    }
+
+    void Run()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) && isGrounded == true)
+        {
+            isRunning = true;
+        }
+        else
+        {
+            isRunning = false;
         }
     }
 }
