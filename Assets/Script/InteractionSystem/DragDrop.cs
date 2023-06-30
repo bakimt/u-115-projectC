@@ -7,6 +7,7 @@ public class DragDrop : MonoBehaviour
     private Vector3 mOffset;
     private float mZCoord;
     public Transform charKiz;
+    public float maxDistance = 3f; // charKiz'e olan maksimum mesafe
     private bool isDragging = false;
     private Rigidbody rb;
 
@@ -50,6 +51,12 @@ public class DragDrop : MonoBehaviour
             {
                 Quaternion targetRotation = Quaternion.LookRotation(direction, Vector3.up);
                 charKiz.rotation = targetRotation;
+            }
+
+            if (Vector3.Distance(transform.position, charKiz.position) > maxDistance)
+            {
+                isDragging = false;
+                rb.useGravity = true;
             }
         }
     }
