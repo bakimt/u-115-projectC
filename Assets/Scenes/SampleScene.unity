@@ -14347,6 +14347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charKiz: {fileID: 1349091467}
+  charKizObject: {fileID: 225033456}
   maxDistance: 15
   smoothSpeed: 3
 --- !u!54 &1154229548
@@ -27060,6 +27061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charKiz: {fileID: 1349091467}
+  charKizObject: {fileID: 0}
   maxDistance: 15
   smoothSpeed: 5
 --- !u!54 &1934041839

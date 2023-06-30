@@ -7,15 +7,16 @@ public class DragDrop : MonoBehaviour
     private Vector3 mOffset;
     private float mZCoord;
     public Transform charKiz;
-    public float maxDistance = 3f; // charKiz'e olan maksimum mesafe
+    public GameObject charKizObject;
+    private Animator charKizAnim;
+    public float maxDistance = 3f;
     private bool isDragging = false;
     private Rigidbody rb;
-
-    // Eklenen değişkenler
-    public float smoothSpeed = 5f; // Yumuşaklık hızı
+    public float smoothSpeed = 5f;
 
     private void Start()
     {
+        charKizAnim = charKizObject.GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
     }
 
@@ -25,6 +26,8 @@ public class DragDrop : MonoBehaviour
         mOffset = gameObject.transform.position - GetMouseWorldPos();
         isDragging = true;
         rb.useGravity = false;
+        charKizAnim.SetBool("isMoving", false);
+        charKizAnim.SetBool("isDrag", true);
     }
 
     private Vector3 GetMouseWorldPos()
@@ -40,13 +43,9 @@ public class DragDrop : MonoBehaviour
         {
             Vector3 targetPosition = GetMouseWorldPos() + mOffset;
             targetPosition.z = transform.position.z;
-
-            // Hareketin yumuşaklaştırılması
             transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
-
             Vector3 direction = transform.position - charKiz.position;
             direction.y = 0f;
-
             if (direction != Vector3.zero)
             {
                 Quaternion targetRotation = Quaternion.LookRotation(direction, Vector3.up);
@@ -67,6 +66,8 @@ public class DragDrop : MonoBehaviour
         {
             isDragging = false;
             rb.useGravity = true;
+            charKizAnim.SetBool("isMoving", false);
+            charKizAnim.SetBool("isDrag", false);
         }
     }
 
@@ -76,6 +77,8 @@ public class DragDrop : MonoBehaviour
         {
             isDragging = false;
             rb.useGravity = true;
+            charKizAnim.SetBool("isMoving", false);
+            charKizAnim.SetBool("isDrag", false);
         }
     }
 }
