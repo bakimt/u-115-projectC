@@ -8,12 +8,22 @@ public class DragDrop : MonoBehaviour
     private float mZCoord;
     public Transform charKiz;
     private bool isDragging = false;
+    private Rigidbody rb;
+
+    // Eklenen değişkenler
+    public float smoothSpeed = 5f; // Yumuşaklık hızı
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     private void OnMouseDown()
     {
         mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
         mOffset = gameObject.transform.position - GetMouseWorldPos();
         isDragging = true;
+        rb.useGravity = false;
     }
 
     private Vector3 GetMouseWorldPos()
@@ -29,7 +39,9 @@ public class DragDrop : MonoBehaviour
         {
             Vector3 targetPosition = GetMouseWorldPos() + mOffset;
             targetPosition.z = transform.position.z;
-            transform.position = targetPosition;
+
+            // Hareketin yumuşaklaştırılması
+            transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
 
             Vector3 direction = transform.position - charKiz.position;
             direction.y = 0f;
@@ -42,12 +54,21 @@ public class DragDrop : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnMouseUp()
     {
         if (isDragging)
         {
-            // Başka bir nesneye çarptığında tutmayı bırak
             isDragging = false;
+            rb.useGravity = true;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (isDragging)
+        {
+            isDragging = false;
+            rb.useGravity = true;
         }
     }
 }
