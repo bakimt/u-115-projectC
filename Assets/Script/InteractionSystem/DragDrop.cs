@@ -13,6 +13,8 @@ public class DragDrop : MonoBehaviour
     private bool isDragging = false;
     private Rigidbody rb;
     public float smoothSpeed = 5f;
+    public float minYPosition = -10f;
+    public float maxYPosition = 10f;
 
     private void Start()
     {
@@ -26,8 +28,6 @@ public class DragDrop : MonoBehaviour
         mOffset = gameObject.transform.position - GetMouseWorldPos();
         isDragging = true;
         rb.useGravity = false;
-        charKizAnim.SetBool("isMoving", false);
-        charKizAnim.SetBool("isDrag", true);
     }
 
     private Vector3 GetMouseWorldPos()
@@ -43,6 +43,7 @@ public class DragDrop : MonoBehaviour
         {
             Vector3 targetPosition = GetMouseWorldPos() + mOffset;
             targetPosition.z = transform.position.z;
+            targetPosition.y = Mathf.Clamp(targetPosition.y, minYPosition, maxYPosition);
             transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
             Vector3 direction = transform.position - charKiz.position;
             direction.y = 0f;
@@ -54,8 +55,15 @@ public class DragDrop : MonoBehaviour
 
             if (Vector3.Distance(transform.position, charKiz.position) > maxDistance)
             {
+                charKizAnim.SetBool("isMoving", false);
+                charKizAnim.SetBool("isDrag", false);
                 isDragging = false;
                 rb.useGravity = true;
+            }
+            else
+            {
+                charKizAnim.SetBool("isMoving", false);
+                charKizAnim.SetBool("isDrag", true);
             }
         }
     }

@@ -14350,6 +14350,8 @@ MonoBehaviour:
   charKizObject: {fileID: 225033456}
   maxDistance: 15
   smoothSpeed: 3
+  minYPosition: 1
+  maxYPosition: 10
 --- !u!54 &1154229548
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14376,7 +14378,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 2
+  m_CollisionDetection: 0
 --- !u!65 &1154229549
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27061,9 +27063,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charKiz: {fileID: 1349091467}
-  charKizObject: {fileID: 0}
+  charKizObject: {fileID: 225033456}
   maxDistance: 15
   smoothSpeed: 5
+  minYPosition: -10
+  maxYPosition: 10
 --- !u!54 &1934041839
 Rigidbody:
   m_ObjectHideFlags: 0
