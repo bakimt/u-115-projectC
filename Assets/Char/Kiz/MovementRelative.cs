@@ -6,14 +6,14 @@ public class MovementRelative : MonoBehaviour
 {
     Transform cam;
     Rigidbody charRB;
-    [SerializeField] float MoveSpeed = 15f;
+    [SerializeField] float MoveSpeed = 6f;
     [SerializeField] float JumpForce = 5f;
-    [SerializeField] float RunSpeed = 15f;
+    float RunSpeed = 10f;
     public Animator charAnimator;
     bool isGrounded;
     bool isGliding;
     bool isJumping;
-    bool isMoving = false;
+    public bool isMoving = false;
     bool isRunning = false;
 
     void Start()
@@ -27,6 +27,7 @@ public class MovementRelative : MonoBehaviour
         cam = Camera.main.transform;
         Move();
         Jump();
+        Run();
         if (isMoving == true)
         {
             charAnimator.SetBool("isMoving", true);
@@ -66,7 +67,7 @@ public class MovementRelative : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetButtonDown("Jump") && isGrounded == true)
+        if (Input.GetButtonDown("Jump") && isGrounded == true && isRunning == true)
         {
             charRB.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
             isGrounded = false;
@@ -87,13 +88,21 @@ public class MovementRelative : MonoBehaviour
 
     void Run()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && isGrounded == true)
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
+            MoveSpeed = RunSpeed;
             isRunning = true;
+            charAnimator.SetBool("isMoving", false);
+            charAnimator.SetBool("isRunning", true);
+            Debug.Log("şiftebastın");
         }
-        else
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
+            MoveSpeed = 6f;
             isRunning = false;
+            charAnimator.SetBool("isMoving", true);
+            charAnimator.SetBool("isRunning", false);
+            Debug.Log("şifttençektin");
         }
     }
 }

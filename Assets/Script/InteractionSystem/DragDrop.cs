@@ -15,11 +15,26 @@ public class DragDrop : MonoBehaviour
     public float smoothSpeed = 5f;
     public float minYPosition = -10f;
     public float maxYPosition = 10f;
+    private MovementRelative charKizMoveSc;
+    private bool hareketEtme;
 
     private void Start()
     {
+        charKizMoveSc = charKizObject.GetComponent<MovementRelative>();
         charKizAnim = charKizObject.GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+    }
+
+    void Update()
+    {
+        hareketEtme = charKizMoveSc.isMoving;
+        if(hareketEtme == true)
+        {
+            charKizAnim.SetBool("isMoving", true);
+            charKizAnim.SetBool("isDrag", false);
+            isDragging = false;
+            rb.useGravity = true;
+        }
     }
 
     private void OnMouseDown()
