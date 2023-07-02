@@ -79,7 +79,40 @@ Bu oyun, bulmacaları çözmekten zevk alan ve hikayelerle ilgili oyunlardan key
 
 # Sprint 2
 
--
+- Sprint içinde tamamlanması tahmin edilen puan: 175 Puan
+- **Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır
+- Sprint Board ekran görüntüsü:
+  ![Ekran görüntüsü 2023-07-03 023610](https://github.com/bakimt/u-115-projectC/assets/64227311/3b61dc60-77ea-482d-9d9a-befec29a74fe)
+
+- Ürünün ekran görüntüleri:
+    ![Ekran görüntüsü 2023-07-03 024036](https://github.com/bakimt/u-115-projectC/assets/64227311/090f38ef-3e8e-4e39-ae74-37a01146dc9e)
+    ![Ekran görüntüsü 2023-07-03 024050](https://github.com/bakimt/u-115-projectC/assets/64227311/fed695b0-c0f7-4ee4-86e9-d587c99cbec2)
+    ![Ekran görüntüsü 2023-07-03 024104](https://github.com/bakimt/u-115-projectC/assets/64227311/ecb568b6-7a6d-49c8-a879-a57aeafeea1e)
+    ![Ekran görüntüsü 2023-07-03 024005](https://github.com/bakimt/u-115-projectC/assets/64227311/4fb0b0cf-495e-4541-b33b-43731e7fca9f)
+    ![Ekran görüntüsü 2023-07-03 024124](https://github.com/bakimt/u-115-projectC/assets/64227311/4f47d4ac-e21f-4473-af0f-2fbc46f072f0)
+    ![Ekran görüntüsü 2023-07-03 024154](https://github.com/bakimt/u-115-projectC/assets/64227311/77d09ed3-1492-495a-a9a4-500bd15bf45e)
+
+
+https://github.com/bakimt/u-115-projectC/assets/64227311/e2e56290-bd31-447e-9774-4f3ee31946c7
+
+
+
+https://github.com/bakimt/u-115-projectC/assets/64227311/e5239359-d7f8-4c91-8991-fed65ca881ea
+
+
+
+
+https://github.com/bakimt/u-115-projectC/assets/64227311/bfa1c4be-0a30-467e-be7b-4c2309e0df3a
+
+
+
+
+https://github.com/bakimt/u-115-projectC/assets/64227311/dd8774f5-3935-485a-bb3a-6fec9f06a83f
+
+
+
+- Ürün Durumu
+
 - **Sprint Retrospective:**
 
   
