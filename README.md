@@ -113,9 +113,10 @@ https://github.com/bakimt/u-115-projectC/assets/64227311/dd8774f5-3935-485a-bb3a
 
 
 
-- Ürün Durumu
-
+- Sprint Review: sprint 2'de yapılması planlanmayan, öngöremediğimiz bazı değişiklikler ve hatalar olduğu için planlanan kısmında aksaklık yaşandı.
 - **Sprint Retrospective:**
+  - Bir ekip üyesi aktif olmadığı sebebiyle takımdan ayrıldı.
+  - Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
 
   
 
