@@ -9,7 +9,7 @@ Unity 115
 - Mustafa Tahsin Baki: Scrum Master / Developer
 - Mert Kıyak: Developer
 - Nuşin Beyza Ericek: Developer
-- Batuhan Külli: Developer
+- Batuhan Külli: aktif değil
 
 ## Ürün İsmi
 
