@@ -80,8 +80,10 @@ Bu oyun, bulmacaları çözmekten zevk alan ve hikayelerle ilgili oyunlardan key
 # Sprint 2
 
 - Sprint içinde tamamlanması tahmin edilen puan: 175 Puan
-- **Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır
+- **Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır [Daily Scrum.docx](https://github.com/bakimt/u-115-projectC/files/11941290/Daily.Scrum.docx)
+
 - Sprint Board ekran görüntüsü:
+
   ![Ekran görüntüsü 2023-07-03 023610](https://github.com/bakimt/u-115-projectC/assets/64227311/3b61dc60-77ea-482d-9d9a-befec29a74fe)
 
 - Ürünün ekran görüntüleri:
