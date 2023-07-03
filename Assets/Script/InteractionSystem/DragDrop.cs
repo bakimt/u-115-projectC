@@ -9,13 +9,15 @@ public class DragDrop : MonoBehaviour
     public Transform charKiz;
     public GameObject charKizObject;
     private Animator charKizAnim;
+    public ParticleSystem handParticle;
+    public ParticleSystem boxParticle;
+    private MovementRelative charKizMoveSc;
     public float maxDistance = 3f;
     private bool isDragging = false;
     private Rigidbody rb;
     public float smoothSpeed = 5f;
     public float minYPosition = -10f;
     public float maxYPosition = 10f;
-    private MovementRelative charKizMoveSc;
     private bool hareketEtme;
 
     private void Start()
@@ -23,10 +25,13 @@ public class DragDrop : MonoBehaviour
         charKizMoveSc = charKizObject.GetComponent<MovementRelative>();
         charKizAnim = charKizObject.GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        handParticle.Stop();
+        boxParticle.Stop();
     }
 
     void Update()
     {
+
         hareketEtme = charKizMoveSc.isMoving;
         if(hareketEtme == true)
         {
@@ -34,6 +39,8 @@ public class DragDrop : MonoBehaviour
             charKizAnim.SetBool("isDrag", false);
             isDragging = false;
             rb.useGravity = true;
+            handParticle.Stop();
+            boxParticle.Stop();
         }
     }
 
@@ -43,6 +50,8 @@ public class DragDrop : MonoBehaviour
         mOffset = gameObject.transform.position - GetMouseWorldPos();
         isDragging = true;
         rb.useGravity = false;
+        handParticle.Play();
+        boxParticle.Play();
     }
 
     private Vector3 GetMouseWorldPos()
@@ -91,7 +100,10 @@ public class DragDrop : MonoBehaviour
             rb.useGravity = true;
             charKizAnim.SetBool("isMoving", false);
             charKizAnim.SetBool("isDrag", false);
+            handParticle.Stop();
+            boxParticle.Stop();
         }
+            
     }
 
     private void OnTriggerEnter(Collider other)
@@ -102,6 +114,8 @@ public class DragDrop : MonoBehaviour
             rb.useGravity = true;
             charKizAnim.SetBool("isMoving", false);
             charKizAnim.SetBool("isDrag", false);
+            handParticle.Stop();
+            boxParticle.Stop();
         }
     }
 }

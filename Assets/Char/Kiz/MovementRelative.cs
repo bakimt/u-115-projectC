@@ -77,17 +77,21 @@ public class MovementRelative : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1) && isJumping == true)
         {
-            Physics.gravity = new Vector3(0, -3.0F, 0);
+            Physics.gravity = new Vector3(0, -4.0F, 0);
             charAnimator.SetBool("isGliding", true);
             isGliding = true;
         }
         if (Input.GetMouseButtonUp(1))
         {
             Physics.gravity = new Vector3(0, -9.81F, 0);
-            charAnimator.SetBool("isGliding", false);
-            charAnimator.SetBool("isGrounded", true);
+            charAnimator.SetBool("isGliding", true);
             isGliding = false;
+            if(isGrounded == true)
+            {
+                charAnimator.SetBool("isGrounded", true);
+            }
         }
+
     }
 
     void OnCollisionEnter(Collision collision)
