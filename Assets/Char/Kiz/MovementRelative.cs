@@ -74,15 +74,32 @@ public class MovementRelative : MonoBehaviour
             isJumping = true;
             charAnimator.SetBool("isJumping", true);
         }
+
+        if (Input.GetMouseButtonDown(1) && isJumping == true)
+        {
+            Physics.gravity = new Vector3(0, -3.0F, 0);
+            charAnimator.SetBool("isGliding", true);
+            isGliding = true;
+        }
+        if (Input.GetMouseButtonUp(1))
+        {
+            Physics.gravity = new Vector3(0, -9.81F, 0);
+            charAnimator.SetBool("isGliding", false);
+            charAnimator.SetBool("isGrounded", true);
+            isGliding = false;
+        }
     }
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
+            Physics.gravity = new Vector3(0, -9.81F, 0);
             isGrounded = true;
             isJumping = false;
             charAnimator.SetBool("isJumping", false);
+            charAnimator.SetBool("isGliding", false);
+            charAnimator.SetBool("isGrounded", true);
         }
     }
 
@@ -94,7 +111,6 @@ public class MovementRelative : MonoBehaviour
             isRunning = true;
             charAnimator.SetBool("isMoving", false);
             charAnimator.SetBool("isRunning", true);
-            Debug.Log("şiftebastın");
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
@@ -102,7 +118,6 @@ public class MovementRelative : MonoBehaviour
             isRunning = false;
             charAnimator.SetBool("isMoving", true);
             charAnimator.SetBool("isRunning", false);
-            Debug.Log("şifttençektin");
         }
     }
 }
