@@ -8,6 +8,8 @@ public class MovementRelative : MonoBehaviour
     Rigidbody charRB;
     [SerializeField] float MoveSpeed = 6f;
     [SerializeField] float JumpForce = 5f;
+    public ParticleSystem charKizParticleRight;
+    public ParticleSystem charKizParticleLeft;
     float RunSpeed = 10f;
     public Animator charAnimator;
     bool isGrounded;
@@ -20,6 +22,8 @@ public class MovementRelative : MonoBehaviour
     {
         charRB = GetComponent<Rigidbody>();
         charAnimator = GetComponent<Animator>();
+        charKizParticleRight.Stop();
+        charKizParticleLeft.Stop();
     }
 
     void Update()
@@ -35,6 +39,11 @@ public class MovementRelative : MonoBehaviour
         else
         {
             charAnimator.SetBool("isMoving", false);
+        }
+        if (isGrounded == true)
+        {
+            charKizParticleRight.Stop();
+            charKizParticleLeft.Stop();
         }
     }
 
@@ -80,6 +89,8 @@ public class MovementRelative : MonoBehaviour
             Physics.gravity = new Vector3(0, -4.0F, 0);
             charAnimator.SetBool("isGliding", true);
             isGliding = true;
+            charKizParticleRight.Play();
+            charKizParticleLeft.Play();
         }
         if (Input.GetMouseButtonUp(1))
         {
