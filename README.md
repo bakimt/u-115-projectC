@@ -84,7 +84,7 @@ Bu oyun, bulmacaları çözmekten zevk alan ve hikayelerle ilgili oyunlardan key
 
 - Sprint içinde tamamlanması tahmin edilen puan: 175 Puan
 - Puan tamamlama mantığı: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. 2. sprintte yapılması planlanan bazı işlerin bitmemesi sonucunda hedeflenen 175 puanın 130 kadarı tamamlandı, bir sonraki sprintte bu açığın kapatılması için 3. sprint planlaması yeniden yapıldı.
-**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadı!![daily scrum 1](https://github.com/bakimt/u-115-projectC/assets/116684187/cb90524f-f9f8-40c2-b28b-cb3e7f0b06a9)
+- **Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadı!![daily scrum 1](https://github.com/bakimt/u-115-projectC/assets/116684187/cb90524f-f9f8-40c2-b28b-cb3e7f0b06a9)
 [daily scrum 2](https://github.com/bakimt/u-115-projectC/assets/116684187/61b8c801-545b-4a3e-b15f-f703e51d06ac) 
 r  [Daily.Scrum.docx](https://github.com/bakimt/u-115-projectC/files/11941452/Daily.Scrum.docx)
 
