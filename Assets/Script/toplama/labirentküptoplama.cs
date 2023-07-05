@@ -16,11 +16,7 @@ public class labirentküptoplama : MonoBehaviour
         {
             Destroy(gameObject);
             bar.Add(1);
-
-            if (other.gameObject.tag == "mezarlik") // Karakterin colliderı ile etkileşim sağlandığında
-        {
             SceneManager.LoadScene("LevelMezarlik");
-        }
         }
     }
 }
