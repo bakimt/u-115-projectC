@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelUcurum.unity
     guid: 649ddf5e968ca484a8381bdee56ec192
+  - enabled: 0
+    path: Assets/Scenes/LoadScene.unity
+    guid: c57d515c9dc6b0b42938d8c275526667
   m_configObjects: {}
