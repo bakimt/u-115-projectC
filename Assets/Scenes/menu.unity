@@ -1028,7 +1028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00038528, y: -177.26}
+  m_AnchoredPosition: {x: 0.000019069, y: -248}
   m_SizeDelta: {x: 273.84, y: 104.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &752506431
@@ -1236,8 +1236,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000038147, y: -60.4}
-  m_SizeDelta: {x: 261.6899, y: 38.5503}
+  m_AnchoredPosition: {x: 0.000016212, y: -65.57626}
+  m_SizeDelta: {x: 272.9216, y: 55.3978}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &901703900
 MonoBehaviour:
@@ -1505,8 +1505,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000012398, y: 66.7}
-  m_SizeDelta: {x: 439.1347, y: 76.4692}
+  m_AnchoredPosition: {x: -0.0000038147, y: 70.42568}
+  m_SizeDelta: {x: 460.5322, y: 96.9677}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1056807581
 MonoBehaviour:
@@ -2276,7 +2276,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000057382, y: -179}
+  m_AnchoredPosition: {x: -0.0000057382, y: -247}
   m_SizeDelta: {x: 253.95, y: 58.5064}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1394812757
@@ -2863,6 +2863,7 @@ GameObject:
   - component: {fileID: 1844044401}
   - component: {fileID: 1844044400}
   - component: {fileID: 1844044399}
+  - component: {fileID: 1844044402}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -2888,8 +2889,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000021935, y: -251}
-  m_SizeDelta: {x: 178.3044, y: 48.2656}
+  m_AnchoredPosition: {x: 0, y: -241}
+  m_SizeDelta: {x: 226.039, y: 65.1131}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1844044399
 MonoBehaviour:
@@ -2904,7 +2905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2913,10 +2914,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.49803922}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 0.57254905}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.6745098}
+    m_DisabledColor: {r: 0.9433962, g: 0.9202563, b: 0.9202563, a: 0.77254903}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2972,14 +2973,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.4392157}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2997,6 +2998,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844044397}
   m_CullTransparentMesh: 1
+--- !u!95 &1844044402
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844044397}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f5f87ac416246af44be22d3ac70bba3b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1974447375
 GameObject:
   m_ObjectHideFlags: 0
