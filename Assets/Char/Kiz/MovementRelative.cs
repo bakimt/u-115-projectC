@@ -11,6 +11,7 @@ public class MovementRelative : MonoBehaviour
     [SerializeField] public AudioSource walkStep;
     [SerializeField] public AudioSource runStep;
     [SerializeField] public AudioSource glideSound;
+    [SerializeField] public AudioSource jumpSound;
     public ParticleSystem charKizParticleRight;
     public ParticleSystem charKizParticleLeft;
     float RunSpeed = 10f;
@@ -30,6 +31,7 @@ public class MovementRelative : MonoBehaviour
         walkStep.enabled = false;
         runStep.enabled = false;
         glideSound.enabled = false;
+        jumpSound.enabled = false;
     }
 
     void Update()
@@ -53,7 +55,7 @@ public class MovementRelative : MonoBehaviour
             charKizParticleRight.Stop();
             charKizParticleLeft.Stop();
         }
-        if (isRunning == true && isGrounded == true)
+        if (isGrounded == true && isMoving == true && isRunning == true)
         {
             runStep.enabled = true;
             walkStep.enabled = false;
@@ -61,7 +63,6 @@ public class MovementRelative : MonoBehaviour
         else
         {
             runStep.enabled = false;
-            walkStep.enabled = true;
         }
     }
 
@@ -99,6 +100,7 @@ public class MovementRelative : MonoBehaviour
             charRB.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
             isGrounded = false;
             isJumping = true;
+            jumpSound.enabled = true;
             charAnimator.SetBool("isJumping", true);
         }
 
@@ -112,6 +114,7 @@ public class MovementRelative : MonoBehaviour
             walkStep.enabled = false;
             runStep.enabled = false;
             glideSound.enabled = true;
+            jumpSound.enabled = false;
         }
         if (Input.GetMouseButtonUp(1))
         {
@@ -134,6 +137,8 @@ public class MovementRelative : MonoBehaviour
             Physics.gravity = new Vector3(0, -9.81F, 0);
             isGrounded = true;
             isJumping = false;
+            jumpSound.enabled = false;
+            glideSound.enabled = false;
             charAnimator.SetBool("isJumping", false);
             charAnimator.SetBool("isGliding", false);
             charAnimator.SetBool("isGrounded", true);
