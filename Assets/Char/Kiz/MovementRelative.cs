@@ -8,6 +8,9 @@ public class MovementRelative : MonoBehaviour
     Rigidbody charRB;
     [SerializeField] float MoveSpeed = 6f;
     [SerializeField] float JumpForce = 5f;
+    [SerializeField] public AudioSource walkStep;
+    [SerializeField] public AudioSource runStep;
+    [SerializeField] public AudioSource glideSound;
     public ParticleSystem charKizParticleRight;
     public ParticleSystem charKizParticleLeft;
     float RunSpeed = 10f;
@@ -24,6 +27,9 @@ public class MovementRelative : MonoBehaviour
         charAnimator = GetComponent<Animator>();
         charKizParticleRight.Stop();
         charKizParticleLeft.Stop();
+        walkStep.enabled = false;
+        runStep.enabled = false;
+        glideSound.enabled = false;
     }
 
     void Update()
@@ -32,18 +38,30 @@ public class MovementRelative : MonoBehaviour
         Move();
         Jump();
         Run();
-        if (isMoving == true)
+        if (isMoving == true && isGrounded == true)
         {
             charAnimator.SetBool("isMoving", true);
+            walkStep.enabled = true;
         }
         else
         {
             charAnimator.SetBool("isMoving", false);
+            walkStep.enabled = false;
         }
         if (isGrounded == true)
         {
             charKizParticleRight.Stop();
             charKizParticleLeft.Stop();
+        }
+        if (isRunning == true && isGrounded == true)
+        {
+            runStep.enabled = true;
+            walkStep.enabled = false;
+        }
+        else
+        {
+            runStep.enabled = false;
+            walkStep.enabled = true;
         }
     }
 
@@ -91,12 +109,16 @@ public class MovementRelative : MonoBehaviour
             isGliding = true;
             charKizParticleRight.Play();
             charKizParticleLeft.Play();
+            walkStep.enabled = false;
+            runStep.enabled = false;
+            glideSound.enabled = true;
         }
         if (Input.GetMouseButtonUp(1))
         {
             Physics.gravity = new Vector3(0, -9.81F, 0);
             charAnimator.SetBool("isGliding", true);
             isGliding = false;
+            glideSound.enabled = false;
             if(isGrounded == true)
             {
                 charAnimator.SetBool("isGrounded", true);

@@ -8,6 +8,7 @@ public class DragDrop : MonoBehaviour
     private float mZCoord;
     public Transform charKiz;
     public GameObject charKizObject;
+    [SerializeField] public AudioSource magicSound;
     private Animator charKizAnim;
     public ParticleSystem handParticle;
     public ParticleSystem boxParticle;
@@ -27,6 +28,7 @@ public class DragDrop : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         handParticle.Stop();
         boxParticle.Stop();
+        magicSound.enabled = false;
     }
 
     void Update()
@@ -41,6 +43,7 @@ public class DragDrop : MonoBehaviour
             rb.useGravity = true;
             handParticle.Stop();
             boxParticle.Stop();
+            magicSound.enabled = false;
         }
     }
 
@@ -52,6 +55,7 @@ public class DragDrop : MonoBehaviour
         rb.useGravity = false;
         handParticle.Play();
         boxParticle.Play();
+        magicSound.enabled = true;
     }
 
     private Vector3 GetMouseWorldPos()
@@ -83,6 +87,9 @@ public class DragDrop : MonoBehaviour
                 charKizAnim.SetBool("isDrag", false);
                 isDragging = false;
                 rb.useGravity = true;
+                magicSound.enabled = false;
+                handParticle.Stop();
+                boxParticle.Stop();
             }
             else
             {
@@ -102,6 +109,7 @@ public class DragDrop : MonoBehaviour
             charKizAnim.SetBool("isDrag", false);
             handParticle.Stop();
             boxParticle.Stop();
+            magicSound.enabled = false;
         }
             
     }
@@ -116,6 +124,7 @@ public class DragDrop : MonoBehaviour
             charKizAnim.SetBool("isDrag", false);
             handParticle.Stop();
             boxParticle.Stop();
+            magicSound.enabled = false;
         }
     }
 }
