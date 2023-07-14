@@ -18,7 +18,7 @@ public class triggerColliderDeneme : MonoBehaviour
     {
         pressPlate.GetComponent<Animator>().SetBool("upPlate", false);
         doorMesh.GetComponent<Animator>().SetBool("closeDoor", false);
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Box"))
         {
             doorMesh.GetComponent<Animator>().SetBool("openDoor", true);
             pressPlate.GetComponent<Animator>().SetBool("pressedPlate", true);
@@ -28,7 +28,7 @@ public class triggerColliderDeneme : MonoBehaviour
     {
         pressPlate.GetComponent<Animator>().SetBool("pressedPlate", false);
         doorMesh.GetComponent<Animator>().SetBool("openDoor", false);
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Box"))
         {
             doorMesh.GetComponent<Animator>().SetBool("closeDoor", true);
             pressPlate.GetComponent<Animator>().SetBool("upPlate", true);
