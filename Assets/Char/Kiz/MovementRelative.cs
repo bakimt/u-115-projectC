@@ -8,6 +8,10 @@ public class MovementRelative : MonoBehaviour
     Rigidbody charRB;
     [SerializeField] float MoveSpeed = 6f;
     [SerializeField] float JumpForce = 5f;
+    [SerializeField] public AudioSource walkStep;
+    [SerializeField] public AudioSource runStep;
+    [SerializeField] public AudioSource glideSound;
+    [SerializeField] public AudioSource jumpSound;
     public ParticleSystem charKizParticleRight;
     public ParticleSystem charKizParticleLeft;
     float RunSpeed = 10f;
@@ -24,6 +28,10 @@ public class MovementRelative : MonoBehaviour
         charAnimator = GetComponent<Animator>();
         charKizParticleRight.Stop();
         charKizParticleLeft.Stop();
+        walkStep.enabled = false;
+        runStep.enabled = false;
+        glideSound.enabled = false;
+        jumpSound.enabled = false;
     }
 
     void Update()
@@ -32,18 +40,29 @@ public class MovementRelative : MonoBehaviour
         Move();
         Jump();
         Run();
-        if (isMoving == true)
+        if (isMoving == true && isGrounded == true)
         {
             charAnimator.SetBool("isMoving", true);
+            walkStep.enabled = true;
         }
         else
         {
             charAnimator.SetBool("isMoving", false);
+            walkStep.enabled = false;
         }
         if (isGrounded == true)
         {
             charKizParticleRight.Stop();
             charKizParticleLeft.Stop();
+        }
+        if (isGrounded == true && isMoving == true && isRunning == true)
+        {
+            runStep.enabled = true;
+            walkStep.enabled = false;
+        }
+        else
+        {
+            runStep.enabled = false;
         }
     }
 
@@ -81,6 +100,7 @@ public class MovementRelative : MonoBehaviour
             charRB.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
             isGrounded = false;
             isJumping = true;
+            jumpSound.enabled = true;
             charAnimator.SetBool("isJumping", true);
         }
 
@@ -91,12 +111,17 @@ public class MovementRelative : MonoBehaviour
             isGliding = true;
             charKizParticleRight.Play();
             charKizParticleLeft.Play();
+            walkStep.enabled = false;
+            runStep.enabled = false;
+            glideSound.enabled = true;
+            jumpSound.enabled = false;
         }
         if (Input.GetMouseButtonUp(1))
         {
             Physics.gravity = new Vector3(0, -9.81F, 0);
             charAnimator.SetBool("isGliding", true);
             isGliding = false;
+            glideSound.enabled = false;
             if(isGrounded == true)
             {
                 charAnimator.SetBool("isGrounded", true);
@@ -112,6 +137,8 @@ public class MovementRelative : MonoBehaviour
             Physics.gravity = new Vector3(0, -9.81F, 0);
             isGrounded = true;
             isJumping = false;
+            jumpSound.enabled = false;
+            glideSound.enabled = false;
             charAnimator.SetBool("isJumping", false);
             charAnimator.SetBool("isGliding", false);
             charAnimator.SetBool("isGrounded", true);

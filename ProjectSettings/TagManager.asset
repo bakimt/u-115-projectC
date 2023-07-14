@@ -12,6 +12,7 @@ TagManager:
   - Interactable
   - odun
   - DropArea
+  - Box
   layers:
   - Default
   - TransparentFX
