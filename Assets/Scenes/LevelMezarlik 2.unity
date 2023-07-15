@@ -3742,6 +3742,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: df389e376a9c18f448cbcc74f9c2f893, type: 3}
       insertIndex: -1
       addedObject: {fileID: 841255805}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: df389e376a9c18f448cbcc74f9c2f893, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 841255807}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: df389e376a9c18f448cbcc74f9c2f893, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 841255806}
   m_SourcePrefab: {fileID: 100100000, guid: df389e376a9c18f448cbcc74f9c2f893, type: 3}
 --- !u!4 &376457341 stripped
 Transform:
@@ -8317,6 +8323,43 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 70948873267775455, guid: df389e376a9c18f448cbcc74f9c2f893, type: 3}
+--- !u!114 &841255806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841255801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 432403e941f61554bb0a0e531ad4dea8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messages:
+  - actorId: 0
+    message: HELLO
+  - actorId: 1
+    message: HELLO MASTER
+  - actorId: 0
+    message: WHACHA DOIN
+  actors:
+  - name: shadow
+    sprite: {fileID: 0}
+  - name: girl
+    sprite: {fileID: 0}
+--- !u!114 &841255807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841255801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ddcb193a1eb0b46b40821efcb5d1d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 841255806}
 --- !u!1 &842153548
 GameObject:
   m_ObjectHideFlags: 0
@@ -26266,7 +26309,7 @@ GameObject:
   - component: {fileID: 1641892914}
   - component: {fileID: 1641892913}
   m_Layer: 5
-  m_Name: Dialogue
+  m_Name: Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26312,11 +26355,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'hello my child asdasdasdasdasdasdsadasdad sadsadasdasdasd sadasdasda
-
-    adasdasdasdasa
-
-'
+  m_text: 'hello '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8401aa6986bfd1840a664b77564d9746, type: 2}
   m_sharedMaterial: {fileID: -7896190666010994908, guid: 8401aa6986bfd1840a664b77564d9746, type: 2}
@@ -31748,6 +31787,7 @@ GameObject:
   - component: {fileID: 1695644188}
   - component: {fileID: 1695644190}
   - component: {fileID: 1695644189}
+  - component: {fileID: 1695644191}
   m_Layer: 5
   m_Name: Dialogue Box
   m_TagString: Untagged
@@ -31812,6 +31852,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695644187}
   m_CullTransparentMesh: 1
+--- !u!114 &1695644191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695644187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d557ad8574656c4dbb4da4b62a06d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorObject: {fileID: 841255801}
+  textObject: {fileID: 1641892911}
 --- !u!4 &1695734941 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 81cd35871902d3943a34af777eb50c8b, type: 3}
@@ -40712,7 +40766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2049859418
 MonoBehaviour:
   m_ObjectHideFlags: 0

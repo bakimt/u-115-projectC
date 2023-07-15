@@ -9,9 +9,9 @@ public class DialogueManager : MonoBehaviour
      public GameObject textObject;
     
     
-    private Text actorName;
-    private Text messageText;
-    private RectTransform backgroundBox;
+    public Text actorName;
+    public Text messageText;
+    public RectTransform backgroundBox;
     
     Message[] currentMessages;
     Actor[] currentActors;
@@ -24,6 +24,23 @@ public class DialogueManager : MonoBehaviour
 
         Debug.Log("Started conversations messages:" + messages.Length);
     }
+
+    void DisplayMessage(){
+      Message messageToDisplay = currentMessages[activeMessage];
+      messageText.text=messageToDisplay.message;
+
+      Actor actorToDisplay=currentActors[messageToDisplay.actorId];
+      actorName.text=actorToDisplay.name;
+    }
+    public void NextMessage(){
+      activeMessage++;
+      if(activeMessage < currentMessages.Length) {
+        DisplayMessage();
+      } else{
+          Debug.Log("Conversation Ended");
+      }
+
+    }
     void Start()
     {
       actorName = actorObject.GetComponent<Text>();  
@@ -34,6 +51,8 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+         if(Input.GetKeyDown(KeyCode.E)) {
+            NextMessage();
+         }  
     }
 }
