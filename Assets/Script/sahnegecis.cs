@@ -11,8 +11,11 @@ public class CubeInteraction : MonoBehaviour
         if (other.gameObject.tag == "LevelMezarlik 1") // Karakterin colliderı ile etkileşim sağlandığında
         {
             SceneManager.LoadScene("Labirent 1"); // Hedef sahneyi yükle
+        }
+        if (other.gameObject.tag == "LevelMezarlık 3") // Karakterin colliderı ile etkileşim sağlandığında
+        {
+            SceneManager.LoadScene("LevelMeydan"); // Hedef sahneyi yükle
         }    
-
     }
 
 }
