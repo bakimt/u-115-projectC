@@ -13,6 +13,7 @@ TagManager:
   - odun
   - DropArea
   - Box
+  - camTrig
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Water
   - UI
   - PostProcess
-  - Interactable
+  - 
   - 
   - 
   - 

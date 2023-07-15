@@ -126,5 +126,7 @@ public class DragDrop : MonoBehaviour
             boxParticle.Stop();
             magicSound.enabled = false;
         }
+        
     }
+    
 }

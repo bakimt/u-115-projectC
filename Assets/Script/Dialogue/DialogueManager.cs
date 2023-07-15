@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -9,9 +10,9 @@ public class DialogueManager : MonoBehaviour
      public GameObject textObject;
     
     
-    private Text actorName;
-    private Text messageText;
-    private RectTransform backgroundBox;
+    public TextMeshProUGUI actorName;
+   public TextMeshProUGUI messageText;
+    public RectTransform backgroundBox;
     
     Message[] currentMessages;
     Actor[] currentActors;
@@ -25,37 +26,35 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Started conversations messages:" + messages.Length);
         DisplayMessage();
     }
-    
-    void DisplayMessage() {
+
+    void DisplayMessage(){
       Message messageToDisplay = currentMessages[activeMessage];
-      messageText.text = messageToDisplay.message;
+      messageText.text=messageToDisplay.message;
 
-      Actor actorToDisplay = currentActors[messageToDisplay.actorId];
-      actorName.text = actorToDisplay.name;
-
+      Actor actorToDisplay=currentActors[messageToDisplay.actorId];
+      actorName.text=actorToDisplay.name;
     }
+    public void NextMessage(){
+      activeMessage++;
+      if(activeMessage < currentMessages.Length) {
+        DisplayMessage();
+      } else{
+          Debug.Log("Conversation Ended");
+      }
 
-    public void NextMessage() {
-        activeMessage++;
-        if (activeMessage < currentMessages.Length) {
-           DisplayMessage();
-          } else{
-            Debug.Log("Conversation ended");
-
-           }
     }
     void Start()
     {
-      actorName = actorObject.GetComponent<Text>();  
-      messageText = textObject.GetComponent<Text>();  
+      actorName = actorObject.GetComponent<TextMeshProUGUI>();  
+      messageText = textObject.GetComponent<TextMeshProUGUI>();  
     }
     
 
     // Update is called once per frame
     void Update()
     {
-      if (Input.GetKeyDown(KeyCode.Space)) {
-          NextMessage();
-      }   
+         if(Input.GetKeyDown(KeyCode.E)) {
+            NextMessage();
+         }  
     }
 }
