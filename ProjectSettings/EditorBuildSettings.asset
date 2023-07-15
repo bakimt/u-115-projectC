@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Labirent 1.unity
     guid: 9abbfbc93cbd54e41863804fcfca8ab5
+  - enabled: 1
+    path: Assets/Scenes/LevelMezarlik 2.unity
+    guid: 33a89e8e2527c6544962d0452ad6675a
   m_configObjects: {}
