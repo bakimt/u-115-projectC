@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -9,8 +10,8 @@ public class DialogueManager : MonoBehaviour
      public GameObject textObject;
     
     
-    public Text actorName;
-    public Text messageText;
+    public TextMeshProUGUI actorName;
+   public TextMeshProUGUI messageText;
     public RectTransform backgroundBox;
     
     Message[] currentMessages;
@@ -23,6 +24,7 @@ public class DialogueManager : MonoBehaviour
         activeMessage = 0;
 
         Debug.Log("Started conversations messages:" + messages.Length);
+        DisplayMessage();
     }
 
     void DisplayMessage(){
@@ -43,8 +45,8 @@ public class DialogueManager : MonoBehaviour
     }
     void Start()
     {
-      actorName = actorObject.GetComponent<Text>();  
-      messageText = textObject.GetComponent<Text>();  
+      actorName = actorObject.GetComponent<TextMeshProUGUI>();  
+      messageText = textObject.GetComponent<TextMeshProUGUI>();  
     }
     
 
