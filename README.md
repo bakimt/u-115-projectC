@@ -81,7 +81,7 @@ Bu oyun, bulmacaları çözmekten zevk alan ve hikayelerle ilgili oyunlardan key
 ---
 
 # Sprint 2
-- Sprint Notları: Oyunun genel görüntüsü içine daha çok detay eklendi. Oyun oynanabilir hale getirildi. Buglar düzeltildi, sesler eklendi, görsellerr ve ışıklandırmalar düzeltildi, görselleşmtirmek adına ara sahneler yapıldı, hikaye akışı oyun içine aktarıldı.
+
 - Sprint içinde tamamlanması tahmin edilen puan: 175 Puan
 - Puan tamamlama mantığı: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. 2. sprintte yapılması planlanan bazı işlerin bitmemesi sonucunda hedeflenen 175 puanın 130 kadarı tamamlandı, bir sonraki sprintte bu açığın kapatılması için 3. sprint planlaması yeniden yapıldı.
 - **Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadı!![daily scrum 1](https://github.com/bakimt/u-115-projectC/assets/116684187/cb90524f-f9f8-40c2-b28b-cb3e7f0b06a9)
@@ -126,6 +126,7 @@ https://github.com/bakimt/u-115-projectC/assets/64227311/dd8774f5-3935-485a-bb3a
 
  # Sprint 3
  - Sprint içinde tamamlanması tahmin edilen puan: 165 Puan
+ - Sprint Notları: Oyunun genel görüntüsü içine daha çok detay eklendi. Oyun oynanabilir hale getirildi. Buglar düzeltildi, sesler eklendi, görsellerr ve ışıklandırmalar düzeltildi, görselleşmtirmek adına ara sahneler yapıldı, hikaye akışı oyun içine aktarıldı.
 - Puan tamamlama mantığı: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog 395'e çıkarıldı. 2. sprintte yapılması planlanan bazı işlerin beklendiğinden daha hızlı bitmesi sonucu ekstra iş yükü alındı sonucunda hedeflenen 165 puanın 145 kadarı tamamlandı.
 - **Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan 
 ![daily scrum srpint 3](https://github.com/bakimt/u-115-projectC/assets/116684187/3e61096b-ade9-4f50-9d4c-b2581a93722d)
