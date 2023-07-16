@@ -146,6 +146,7 @@ https://github.com/bakimt/u-115-projectC/assets/64227311/dd8774f5-3935-485a-bb3a
 ![image](https://github.com/bakimt/u-115-projectC/assets/116684187/2fbbe552-2bb9-4a65-a1bd-3b7c23f6b2ca)
 ![image](https://github.com/bakimt/u-115-projectC/assets/116684187/25dcc92c-654a-4ba1-9631-bc03b9592a49)
 ![image](https://github.com/bakimt/u-115-projectC/assets/116684187/246e0211-be00-4aeb-9429-89f507871fea)
+![ana menü görsel](https://github.com/bakimt/u-115-projectC/assets/116684187/e2568131-5730-45e6-8cc8-abd4d754208b)
 
 
 - Sprint Review: sprint 2'deki hedeflerimize daha hızlı ulaştığımız için ekstra görevler eklendi
