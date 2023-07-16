@@ -8,6 +8,8 @@ public class SignControllerFade : MonoBehaviour
     [SerializeField] private CanvasGroup canvasGroup2;
     private bool isPlayerInRange = false;
 
+    private float transitionSpeed = 1.5f;
+
     private void Start()
     {
         canvasGroup1.alpha = 1f;
@@ -16,24 +18,24 @@ public class SignControllerFade : MonoBehaviour
 
     public void Show()
     {
-        canvasGroup1.alpha = 0f;
-        canvasGroup2.alpha = 1f;
+        StartCoroutine(FadeInOut(canvasGroup2, 1f));
+        StartCoroutine(FadeInOut(canvasGroup1, 0f));
     }
 
     public void Hide()
     {
-        canvasGroup1.alpha = 1f;
-        canvasGroup2.alpha = 0f;
+        StartCoroutine(FadeInOut(canvasGroup1, 1f));
+        StartCoroutine(FadeInOut(canvasGroup2, 0f));
     }
 
-    void Update()
+    private IEnumerator FadeInOut(CanvasGroup canvasGroup, float targetAlpha)
     {
-        if (isPlayerInRange)
+        float currentAlpha = canvasGroup.alpha;
+        while (!Mathf.Approximately(currentAlpha, targetAlpha))
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Show();
-            }
+            currentAlpha = Mathf.MoveTowards(currentAlpha, targetAlpha, Time.deltaTime * transitionSpeed);
+            canvasGroup.alpha = currentAlpha;
+            yield return null;
         }
     }
 
@@ -42,6 +44,7 @@ public class SignControllerFade : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
+            Show();
         }
     }
 
