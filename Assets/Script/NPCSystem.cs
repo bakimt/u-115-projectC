@@ -7,11 +7,11 @@ public class NPCSystem : MonoBehaviour
 {
     public GameObject d_template;
     public GameObject canva;
-    bool playeer_detection = false;
+    bool player_detection = false;
     void Update(){
-        if(player_detection && Input.GetKeyDown(KeyCode.F) && !PlayerMovement.dialogue){
+        if(player_detection && Input.GetKeyDown(KeyCode.F) && !MovementRelative.dialogue){
             canva.SetActive(true);
-            PlayerMovement.dialogue = true;
+            MovementRelative.dialogue = true;
             NewDialogue("Hi");
             NewDialogue("I am Beyza.");
             NewDialogue("İnş bu dialoglar olacak");
@@ -19,11 +19,9 @@ public class NPCSystem : MonoBehaviour
         }
     }
 
-    void
-
     private void OnTriggerEnter(Collider other){
 
-        if(other.name == "PlayerBody"){
+        if(other.name == "kiz-mesh@Happy Idle"){
             player_detection = true;
         }
     }
@@ -32,7 +30,7 @@ public class NPCSystem : MonoBehaviour
     {
         GameObject template_clone = Instantiate(d_template, d_template.transform);
         template_clone.transform.parent = canva.transform;
-        template_clone.transform.getChild(1).GetComponent<TextMeshProUGUI>().text = text;
+        template_clone.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = text;
     }
 
     private void OnTriggerExit(Collider other){

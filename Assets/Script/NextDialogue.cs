@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class NextDialog : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    int index = 2;
+    private void Update()
     {
-        
-    }
+        if(Input.GetMouseButtonDown(0) && transform.childCount > 1)
+        {
+            if(MovementRelative.dialogue)
+            {
+                transform.GetChild(index).gameObject.SetActive(true);
+                index +=1;
+                if(transform.childCount == index)
+                {
+                    index = 2;
+                    MovementRelative.dialogue = false;
+                }
+            }
+            else
+            {
+                gameObject.SetActive(false);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            }
+        }
     }
 }
