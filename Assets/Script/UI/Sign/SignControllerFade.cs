@@ -4,46 +4,35 @@ using UnityEngine;
 
 public class SignControllerFade : MonoBehaviour
 {
-    [SerializeField] private CanvasGroup canvasGroup;
-    [SerializeField] private bool fadeIn = false;
-    [SerializeField] private bool fadeOut = false;
+    [SerializeField] private CanvasGroup canvasGroup1;
+    [SerializeField] private CanvasGroup canvasGroup2;
     private bool isPlayerInRange = false;
 
+    private void Start()
+    {
+        canvasGroup1.alpha = 1f;
+        canvasGroup2.alpha = 0f;
+    }
 
     public void Show()
     {
-        fadeIn = true;
-        fadeOut = false;
+        canvasGroup1.alpha = 0f;
+        canvasGroup2.alpha = 1f;
     }
 
     public void Hide()
     {
-        fadeOut = true;
-        fadeIn = false;
+        canvasGroup1.alpha = 1f;
+        canvasGroup2.alpha = 0f;
     }
 
     void Update()
     {
-        if (fadeIn)
+        if (isPlayerInRange)
         {
-            if (canvasGroup.alpha < 1)
+            if (Input.GetMouseButtonDown(0))
             {
-                canvasGroup.alpha += Time.deltaTime / 3f;
-                if (canvasGroup.alpha >= 1)
-                {
-                    fadeIn = false;
-                }
-            }
-        }
-        if (fadeOut)
-        {
-            if (canvasGroup.alpha > 0)
-            {
-                canvasGroup.alpha -= Time.deltaTime;
-                if (canvasGroup.alpha <= 0)
-                {
-                    fadeOut = false;
-                }
+                Show();
             }
         }
     }
@@ -53,7 +42,6 @@ public class SignControllerFade : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
-            Show();
         }
     }
 
