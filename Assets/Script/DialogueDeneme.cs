@@ -27,6 +27,15 @@ public class DialogueDeneme : MonoBehaviour
             "getting stuck here didn't treat me very nicely",
             "that's why I want to help you.. so you don't end up like me",
             "This realm.. is not what every spirit goes through in their death journey",
+            "you're a special one my child, just like I was ",
+            "But I failed their tests.. I couldn't save my family from this realm and it's tests. and I'm in agony because of it everyday",
+            "I don't want you to end up like me I don't want you to go through what I went through",
+            "so I want to help you",
+            "your first mission, first one you should save is your cat, Luna",
+            "go up the path next to the church",
+            "there's a teleport point, it will teleport you to the necessary location",
+            "I believe in you, my child,",
+            
             
         };
     }
