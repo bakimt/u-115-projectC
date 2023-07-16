@@ -14,8 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelMeydan.unity
     guid: 4a3d822229d8163408f5fbba1b3a6ee9
-  - enabled: 0
-    path: Assets/Scenes/LevelKopru.unity
+  - enabled: 1
+    path: Assets/Scenes/LevelKopru 1.unity
     guid: 8e71cc5b9873a4a4389bbe7a4508abee
   - enabled: 0
     path: Assets/Scenes/LevelMezarlik 1.unity
