@@ -18,9 +18,16 @@ public class DialogueDeneme : MonoBehaviour
 
         dialogueArray = new string[]
         {
-            "kardeşim buralar sıkıntılı yerler dikkat et kendine keserler götünü",
-            "şurda şerafettin diye bir piç var git onu ordan çıkar boğulmuş gelemiyor götü yememiş",
-            "bide sürekli yukarı bak diyen bi moruk var onu da al gel sonra ne bok yersen ye"
+           
+            "you must wonder where you are or how did you even get here",
+            "welcome to the realm of death and life",
+            "I'm Necrosia, a soul that passed away almost 100 years ago I've been here for a while now ",
+            "I looked like you before...",
+            "full of life and joy",
+            "getting stuck here didn't treat me very nicely",
+            "that's why I want to help you.. so you don't end up like me",
+            "This realm.. is not what every spirit goes through in their death journey",
+            
         };
     }
 
