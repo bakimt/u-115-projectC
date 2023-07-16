@@ -10,6 +10,7 @@ public class NPCSystem : MonoBehaviour
     bool playeer_detection = false;
     void Update(){
         if(player_detection && Input.GetKeyDown(KeyCode.F) && !PlayerMovement.dialogue){
+            canva.SetActive(true);
             PlayerMovement.dialogue = true;
             NewDialogue("Hi");
             NewDialogue("I am Beyza.");
