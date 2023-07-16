@@ -32131,7 +32131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2101812039}
   - component: {fileID: 2101812041}
-  - component: {fileID: 2101812040}
+  - component: {fileID: 2101812042}
   m_Layer: 0
   m_Name: detect
   m_TagString: Untagged
@@ -32154,20 +32154,6 @@ Transform:
   m_Father: {fileID: 1353697674}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2101812040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101812038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3847158b694aab046a59a3cc1cfd4ac4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1321013669}
-  textObject: {fileID: 1662650986}
 --- !u!65 &2101812041
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32189,6 +32175,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 6.08, y: 4.28, z: 5.75}
   m_Center: {x: 0, y: 1.5, z: 0}
+--- !u!114 &2101812042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101812038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f1be9deab7e1949a280f6ba5c16dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1321013669}
+  textObject: {fileID: 1662650986}
 --- !u!1001 &2110315834
 PrefabInstance:
   m_ObjectHideFlags: 0
