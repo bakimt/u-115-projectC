@@ -6,24 +6,21 @@ using UnityEngine.UI;
 public class DialogueDeneme : MonoBehaviour
 {
     public Canvas canvas;
-    public GameObject textObject; // Text elemanının bulunduğu objeyi buraya atayın
-    private Text dialogueText; // Text elemanını tutacak değişken
+    public GameObject textObject;
+    private Text dialogueText;
     private bool isInRange = false;
     private string[] dialogueArray;
     private int currentIndex = 0;
 
     void Start()
     {
-        // Text elemanını alıyoruz
-        dialogueText = textObject.GetComponent<Text>();
+        dialogueText = textObject.GetComponentInChildren<Text>();
 
-        // Dizi içerisine metinleri ekleyin
         dialogueArray = new string[]
         {
-            "Merhaba, benim adım NPC.",
-            "Oyun dünyasına hoş geldiniz!",
-            "Keşfetmek için etrafı dolaşın ve eğlenin!"
-            // Dilediğiniz kadar metin ekleyebilirsiniz
+            "kardeşim buralar sıkıntılı yerler dikkat et kendine keserler götünü",
+            "şurda şerafettin diye bir piç var git onu ordan çıkar boğulmuş gelemiyor götü yememiş",
+            "bide sürekli yukarı bak diyen bi moruk var onu da al gel sonra ne bok yersen ye"
         };
     }
 
@@ -32,6 +29,7 @@ public class DialogueDeneme : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isInRange = true;
+            canvas.gameObject.SetActive(true);
         }
     }
 
@@ -60,6 +58,5 @@ public class DialogueDeneme : MonoBehaviour
     void EndDialogue()
     {
         canvas.gameObject.SetActive(false);
-        // İşlemi sonlandırma veya istediğiniz başka bir şey yapabilirsiniz.
     }
 }
