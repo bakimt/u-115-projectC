@@ -794,8 +794,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!65 &33217297
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1440,8 +1440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!1001 &116501671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1543,8 +1543,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!65 &116501675
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1689,7 +1689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 345723388}
-  targetSceneName: LevelKopru 2
+  targetSceneName: LevelKopru 2-2
 --- !u!1 &151025460
 GameObject:
   m_ObjectHideFlags: 0
@@ -2374,7 +2374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 345723388}
-  targetSceneName: LevelKopru 2
+  targetSceneName: LevelKopru 2-2
 --- !u!1001 &272589977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2497,8 +2497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!1 &275688591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2963,7 +2963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 345723388}
-  targetSceneName: LevelKopru 2
+  targetSceneName: LevelKopru 2-2
 --- !u!1001 &322051945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9131,7 +9131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 345723388}
-  targetSceneName: LevelKopru 2
+  targetSceneName: LevelKopru 2-2
 --- !u!1001 &519054420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9390,7 +9390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 345723388}
-  targetSceneName: LevelKopru 2
+  targetSceneName: LevelKopru 2-2
 --- !u!4 &556826427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6488553643038653126, guid: 008098767fa012f45a144b39961bec76, type: 3}
@@ -26695,6 +26695,18 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df389e376a9c18f448cbcc74f9c2f893, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df389e376a9c18f448cbcc74f9c2f893, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df389e376a9c18f448cbcc74f9c2f893, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df389e376a9c18f448cbcc74f9c2f893, type: 3}
       propertyPath: m_LocalPosition.x
       value: 107.665146
       objectReference: {fileID: 0}
@@ -26733,6 +26745,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: df389e376a9c18f448cbcc74f9c2f893, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df389e376a9c18f448cbcc74f9c2f893, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: df389e376a9c18f448cbcc74f9c2f893, type: 3}
       propertyPath: m_Name
@@ -26903,8 +26919,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!65 &998955911
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27048,8 +27064,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!1001 &1010426459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28191,9 +28207,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6248438522094404593, guid: 8f75d7d8649593341822be19369f95fb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1057851773}
-    - targetCorrespondingSourceObject: {fileID: 6248438522094404593, guid: 8f75d7d8649593341822be19369f95fb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1057851772}
   m_SourcePrefab: {fileID: 100100000, guid: 8f75d7d8649593341822be19369f95fb, type: 3}
 --- !u!4 &1057851770 stripped
 Transform:
@@ -28205,20 +28218,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6248438522094404593, guid: 8f75d7d8649593341822be19369f95fb, type: 3}
   m_PrefabInstance: {fileID: 1057851769}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1057851772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1057851771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
 --- !u!65 &1057851773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28253,7 +28252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 0}
-  targetSceneName: 
+  targetSceneName: LevelKopru 2-2
 --- !u!1001 &1073675714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33596,7 +33595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 345723388}
-  targetSceneName: LevelKopru 2
+  targetSceneName: LevelKopru 2-2
 --- !u!1001 &1211316499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34089,7 +34088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 345723388}
-  targetSceneName: LevelKopru 2
+  targetSceneName: LevelKopru 2-2
 --- !u!1001 &1285439471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44306,8 +44305,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!1 &1355526968
 GameObject:
   m_ObjectHideFlags: 0
@@ -49376,8 +49375,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!1001 &1389508263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49928,8 +49927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!65 &1424839821
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49963,8 +49962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!4 &1476277520 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7104217533622820475, guid: f66a4f7d1e88dc44ebf82558ef533bcd, type: 3}
@@ -50511,7 +50510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 345723388}
-  targetSceneName: LevelKopru 2
+  targetSceneName: LevelKopru 2-2
 --- !u!1001 &1530546812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56190,8 +56189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!1001 &1670194011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56887,7 +56886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 345723388}
-  targetSceneName: LevelKopru 2
+  targetSceneName: LevelKopru 2-2
 --- !u!4 &1712048444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 94b062661bf7b534d89761ded541a5e6, type: 3}
@@ -57097,8 +57096,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!65 &1734235085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57550,8 +57549,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!1001 &1816223346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57656,8 +57655,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!65 &1816223350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57892,7 +57891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 345723388}
-  targetSceneName: LevelKopru 2
+  targetSceneName: LevelKopru 2-2
 --- !u!1 &1854307651
 GameObject:
   m_ObjectHideFlags: 0
@@ -63688,8 +63687,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2
 --- !u!1001 &2071912699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64287,5 +64286,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bad8d5ffa532e4b826fbfa108b03c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  targetSceneName: 
+  bar: {fileID: 345723388}
+  targetSceneName: LevelKopru 2-2

@@ -20,7 +20,7 @@ public class Kopruoduntoplama : MonoBehaviour
 
             if (destroyCount == 20)
             {
-                SceneManager.LoadScene("LevelKopru 2");
+                SceneManager.LoadScene("LevelKopru 2-2");
             }
         }
     }
