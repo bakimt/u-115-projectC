@@ -37,8 +37,6 @@ public class MovementRelative : MonoBehaviour
 
     void Update()
     {
-        if(!dialogue)
-        {
             cam = Camera.main.transform;
             Move();
             Jump();
@@ -67,7 +65,6 @@ public class MovementRelative : MonoBehaviour
             {
                 runStep.enabled = false;
             }
-        }
         
     }
 
