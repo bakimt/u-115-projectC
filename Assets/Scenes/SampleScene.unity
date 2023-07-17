@@ -10807,6 +10807,7 @@ GameObject:
   - component: {fileID: 218755193}
   - component: {fileID: 218755192}
   - component: {fileID: 218755191}
+  - component: {fileID: 218755194}
   m_Layer: 0
   m_Name: Pause
   m_TagString: Untagged
@@ -10898,6 +10899,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &218755194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218755189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f121c9ade1225548882e3a6e58d4f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 218755189}
 --- !u!1 &225033456 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7076144029517115734, guid: b9652dd5825005a4dbfccc0868deb3f3, type: 3}
@@ -17649,9 +17663,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab0667bf3df1b0469dc8fbbf4cd0e6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasGroup: {fileID: 201980034}
-  fadeIn: 0
-  fadeOut: 0
+  canvasGroup1: {fileID: 0}
+  canvasGroup2: {fileID: 0}
 --- !u!1 &603721128
 GameObject:
   m_ObjectHideFlags: 0
@@ -17883,13 +17896,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 218755190}
     m_Modifications:
+    - target: {fileID: 4119163310609148389, guid: 9c7bf1647ea5bf64b9846d864cd41356, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 218755194}
+    - target: {fileID: 4119163310609148389, guid: 9c7bf1647ea5bf64b9846d864cd41356, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
     - target: {fileID: 5552397820264229422, guid: 9c7bf1647ea5bf64b9846d864cd41356, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 218755189}
+      objectReference: {fileID: 218755194}
     - target: {fileID: 5552397820264229422, guid: 9c7bf1647ea5bf64b9846d864cd41356, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 6196377044175132653, guid: 9c7bf1647ea5bf64b9846d864cd41356, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6196377044175132653, guid: 9c7bf1647ea5bf64b9846d864cd41356, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6196377044175132653, guid: 9c7bf1647ea5bf64b9846d864cd41356, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 218755194}
+    - target: {fileID: 6196377044175132653, guid: 9c7bf1647ea5bf64b9846d864cd41356, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6196377044175132653, guid: 9c7bf1647ea5bf64b9846d864cd41356, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6880588518666185953, guid: 9c7bf1647ea5bf64b9846d864cd41356, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -18107,7 +18148,7 @@ AudioSource:
   m_GameObject: {fileID: 692881234}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1356112180805160474, guid: 58970b8df17370b42bf3b024e9d58ca4, type: 2}
   m_audioClip: {fileID: 8300000, guid: 054f6737849507f4f88e0cd4ff8b5fb2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.155
@@ -18218,7 +18259,7 @@ AudioSource:
   m_GameObject: {fileID: 692881234}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1356112180805160474, guid: 58970b8df17370b42bf3b024e9d58ca4, type: 2}
   m_audioClip: {fileID: 8300000, guid: cde4598407f067448a1ce80f7a00e756, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
