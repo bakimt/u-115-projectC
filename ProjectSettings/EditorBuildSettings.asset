@@ -8,46 +8,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/menu.unity
     guid: 0f95b6678ad820e49bcde785b0ddc70f
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/LevelMeydan.unity
     guid: 4a3d822229d8163408f5fbba1b3a6ee9
   - enabled: 1
     path: Assets/Scenes/LevelKopru 1.unity
     guid: 8e71cc5b9873a4a4389bbe7a4508abee
-  - enabled: 0
-    path: Assets/Scenes/LevelMezarlik 1.unity
-    guid: 86faf4240bd23b342a3de47da3daa68f
-  - enabled: 1
-    path: Assets/Scenes/Labirent 2.unity
-    guid: ed4d4dc0bed1c00418f06f4c2e00d4b9
-  - enabled: 1
-    path: Assets/Scenes/LevelMezarlik 2.unity
-    guid: c5e9b97e39f816943ae86c3eafdb7d53
-  - enabled: 1
-    path: Assets/Scenes/LevelMezarlik 3.unity
-    guid: b7aea9c6a19291f4ab64846310146cee
   - enabled: 1
     path: Assets/Scenes/LevelKopru 2.unity
     guid: 41429e3f8a8ed474c80391601d52514a
   - enabled: 0
-    path: Assets/Scenes/LevelUcurum.unity
-    guid: 649ddf5e968ca484a8381bdee56ec192
-  - enabled: 0
     path: Assets/Scenes/LoadScene.unity
     guid: c57d515c9dc6b0b42938d8c275526667
   - enabled: 1
-    path: Assets/Scenes/Labirent 1.unity
-    guid: 9abbfbc93cbd54e41863804fcfca8ab5
+    path: Assets/Scenes/Labirent 1-1.unity
+    guid: 2fac28a9dd201f441beb1603519bc371
   - enabled: 1
-    path: Assets/Scenes/LevelMezarlik 2.unity
-    guid: c5e9b97e39f816943ae86c3eafdb7d53
+    path: Assets/Scenes/Labirent 2-2.unity
+    guid: bf73478187006b24f9dcc8182e9b2f73
   - enabled: 1
     path: Assets/Scenes/LevelKopru 2.unity
     guid: 41429e3f8a8ed474c80391601d52514a
   - enabled: 1
     path: Assets/Scenes/Mezarlik 1-1.unity
     guid: a911d1d928204eb4eab137dd91b227ca
+  - enabled: 1
+    path: Assets/Scenes/Mezarlik 2-2.unity
+    guid: 9bf706f93014f664c9871edd2f2050df
+  - enabled: 1
+    path: Assets/Scenes/Mezarlik 3-3.unity
+    guid: f8a301cb81184d045a98ff3f4a7f0f90
   m_configObjects: {}

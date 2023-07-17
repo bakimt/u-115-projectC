@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class labirentküptoplama : MonoBehaviour
+public class LabirentObjeToplama : MonoBehaviour
 {
     private static int destroyCount = 0;
     public ProgressBar bar;
@@ -20,7 +20,7 @@ public class labirentküptoplama : MonoBehaviour
 
             if (destroyCount == 3)
             {
-                SceneManager.LoadScene("Mezarlik 3-3");
+                SceneManager.LoadScene("LevelMeydan");
             }
         }
     }
