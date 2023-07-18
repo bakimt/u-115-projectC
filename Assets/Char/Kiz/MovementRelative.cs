@@ -21,6 +21,7 @@ public class MovementRelative : MonoBehaviour
     bool isJumping;
     public bool isMoving = false;
     bool isRunning = false;
+    static public bool dialogue = false;
 
     void Start()
     {
@@ -36,34 +37,35 @@ public class MovementRelative : MonoBehaviour
 
     void Update()
     {
-        cam = Camera.main.transform;
-        Move();
-        Jump();
-        Run();
-        if (isMoving == true && isGrounded == true)
-        {
-            charAnimator.SetBool("isMoving", true);
-            walkStep.enabled = true;
-        }
-        else
-        {
-            charAnimator.SetBool("isMoving", false);
-            walkStep.enabled = false;
-        }
-        if (isGrounded == true)
-        {
-            charKizParticleRight.Stop();
-            charKizParticleLeft.Stop();
-        }
-        if (isGrounded == true && isMoving == true && isRunning == true)
-        {
-            runStep.enabled = true;
-            walkStep.enabled = false;
-        }
-        else
-        {
-            runStep.enabled = false;
-        }
+            cam = Camera.main.transform;
+            Move();
+            Jump();
+            Run();
+            if (isMoving == true && isGrounded == true)
+            {
+                charAnimator.SetBool("isMoving", true);
+                walkStep.enabled = true;
+            }
+            else
+            {
+                charAnimator.SetBool("isMoving", false);
+                walkStep.enabled = false;
+            }
+            if (isGrounded == true)
+            {
+                charKizParticleRight.Stop();
+                charKizParticleLeft.Stop();
+            }
+            if (isGrounded == true && isMoving == true && isRunning == true)
+            {
+                runStep.enabled = true;
+                walkStep.enabled = false;
+            }
+            else
+            {
+                runStep.enabled = false;
+            }
+        
     }
 
     void Move()

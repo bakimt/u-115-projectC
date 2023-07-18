@@ -4,47 +4,38 @@ using UnityEngine;
 
 public class SignControllerFade : MonoBehaviour
 {
-    [SerializeField] private CanvasGroup canvasGroup;
-    [SerializeField] private bool fadeIn = false;
-    [SerializeField] private bool fadeOut = false;
+    [SerializeField] private CanvasGroup canvasGroup1;
+    [SerializeField] private CanvasGroup canvasGroup2;
     private bool isPlayerInRange = false;
 
+    private float transitionSpeed = 1.5f;
+
+    private void Start()
+    {
+        canvasGroup1.alpha = 1f;
+        canvasGroup2.alpha = 0f;
+    }
 
     public void Show()
     {
-        fadeIn = true;
-        fadeOut = false;
+        StartCoroutine(FadeInOut(canvasGroup2, 1f));
+        StartCoroutine(FadeInOut(canvasGroup1, 0f));
     }
 
     public void Hide()
     {
-        fadeOut = true;
-        fadeIn = false;
+        StartCoroutine(FadeInOut(canvasGroup1, 1f));
+        StartCoroutine(FadeInOut(canvasGroup2, 0f));
     }
 
-    void Update()
+    private IEnumerator FadeInOut(CanvasGroup canvasGroup, float targetAlpha)
     {
-        if (fadeIn)
+        float currentAlpha = canvasGroup.alpha;
+        while (!Mathf.Approximately(currentAlpha, targetAlpha))
         {
-            if (canvasGroup.alpha < 1)
-            {
-                canvasGroup.alpha += Time.deltaTime / 3f;
-                if (canvasGroup.alpha >= 1)
-                {
-                    fadeIn = false;
-                }
-            }
-        }
-        if (fadeOut)
-        {
-            if (canvasGroup.alpha > 0)
-            {
-                canvasGroup.alpha -= Time.deltaTime;
-                if (canvasGroup.alpha <= 0)
-                {
-                    fadeOut = false;
-                }
-            }
+            currentAlpha = Mathf.MoveTowards(currentAlpha, targetAlpha, Time.deltaTime * transitionSpeed);
+            canvasGroup.alpha = currentAlpha;
+            yield return null;
         }
     }
 

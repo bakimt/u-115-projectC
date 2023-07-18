@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2116602288977711756}
   - component: {fileID: 6558843286789105149}
+  - component: {fileID: 5488901856993893728}
   m_Layer: 0
   m_Name: SM_Tent
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   - {fileID: 1668650796458295370}
   - {fileID: 8839246806331744134}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!205 &6558843286789105149
 LODGroup:
@@ -69,6 +70,27 @@ LODGroup:
     renderers:
     - renderer: {fileID: 8022487002214926028}
   m_Enabled: 1
+--- !u!65 &5488901856993893728
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591035372450334774}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.0810785, y: 1.5345149, z: 2.2094462}
+  m_Center: {x: 0.0029116876, y: 0.8118403, z: 0.048352122}
 --- !u!1 &1628540923970205811
 GameObject:
   m_ObjectHideFlags: 0
