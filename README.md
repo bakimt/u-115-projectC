@@ -15,6 +15,9 @@ Unity 115
 
 Hiraeth
 
+## Trailer
+https://www.youtube.com/watch?v=RO-OhEkkCow&ab_channel=yenka
+
 ## Product Backlog URL
 
 https://miro.com/app/board/uXjVM9rWJRI=/?share_link_id=871223250876
@@ -154,6 +157,11 @@ https://github.com/bakimt/u-115-projectC/assets/64227311/dd8774f5-3935-485a-bb3a
   - Diğer sprintlere göre iş yükü arttı
   - Katılım diğer sprintlere kıyasla çok daha yüksekti
   - Oyunumuz oynanabilir hale geldi
+ 
+ ## Kullanılan Assetler
+ [assets.txt](https://github.com/bakimt/u-115-projectC/files/12075624/assets.txt)
+ 
+
 
 
 
