@@ -4,23 +4,21 @@ using UnityEngine;
 
 public class sagSolX : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Hareket hızı
-    public float moveRange = 5f; // Hareket aralığı
+    public float moveSpeed = 5f;
+    public float moveRange = 5f;
 
-    private float initialX; // İlk konumun x koordinatı
+    private float initialX;
 
     private void Start()
     {
-        initialX = transform.position.x; // İlk konumu kaydet
+        initialX = transform.position.x;
     }
 
     private void Update()
     {
-        // Hareket hesaplaması
         float movement = Mathf.Sin(Time.time * moveSpeed) * moveRange;
         Vector3 newPosition = new Vector3(initialX + movement, transform.position.y, transform.position.z);
 
-        // Yeni pozisyonu atama
         transform.position = newPosition;
     }
 }

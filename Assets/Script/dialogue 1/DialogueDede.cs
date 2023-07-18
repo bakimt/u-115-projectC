@@ -19,7 +19,7 @@ public class DialogueDede : MonoBehaviour
         dialogueArray = new string[]
         {
            
-            "Zephyra!",
+
              "My brave girl! you found me! If you were a little more late I would've forgetten that you have even existed!",
               "This place... it does strange things to me Zephyra I feel lost, I feel like I miss something but I don't even know what it is",
                "We should head on our journey, to found ourselves, our purpose, so we don't feel lost anymore ",

@@ -19,7 +19,7 @@ public class DialogueKöprü : MonoBehaviour
         dialogueArray = new string[]
         {
            
-            "hello again, my child",
+
             "you seem suprised about how I got here so fast",
             "getting stuck here sucks.. but it has it's own benefits... like the power of teleportation",
             "yeah I know, epic right?",

@@ -8,7 +8,6 @@ public class Kopruoduntoplama : MonoBehaviour
 {
     private static int destroyCount = 0;
     public ProgressBar bar;
-    public string targetSceneName; 
 
     void OnTriggerEnter(Collider other)
     {

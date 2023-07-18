@@ -4,11 +4,10 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class labirentküptoplama : MonoBehaviour
+public class LabirentAnahtar : MonoBehaviour
 {
     private static int destroyCount = 0;
     public ProgressBar bar;
-    public string targetSceneName; 
 
     void OnTriggerEnter(Collider other)
     {

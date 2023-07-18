@@ -18,8 +18,6 @@ public class DialogueDeneme : MonoBehaviour
 
         dialogueArray = new string[]
         {
-           
-            "you must wonder where you are or how did you even get here",
             "welcome to the realm of death and life",
             "I'm Necrosia, a soul that passed away almost 100 years ago I've been here for a while now ",
             "I looked like you before...",
